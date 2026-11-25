@@ -1,0 +1,240 @@
+backend:
+  name: github
+  repo: RicardoEPRodrigues/genaramos.com
+  branch: main
+  site_domain: genaramos.com
+
+publish_mode: editorial_workflow
+locale: 'pt'
+
+media_folder: "assets/uploads" # Media files are stored in the repo under assets/uploads
+public_folder: "/assets/uploads"
+
+collections:
+  - name: 'pages'
+    label: 'Páginas'
+    editor:
+      preview: false
+    files:
+      - label: 'Início'
+        name: 'home'
+        file: 'index.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Início' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'home' }
+          - { label: 'Destaque (pequenas maiúsculas)', name: 'kicker', widget: 'string', hint: 'Aparece por cima do título principal.' }
+          - { label: 'Título principal', name: 'headline', widget: 'string', hint: 'Ex.: Cabelos que contam' }
+          - { label: 'Final do título (dourado, itálico)', name: 'headline_accent', widget: 'string', required: false, hint: 'Ex.: histórias.' }
+          - { label: 'Introdução', name: 'intro', widget: 'text' }
+          - { label: 'Imagem principal', name: 'hero_image', widget: 'image' }
+          - { label: 'Descrição da imagem principal', name: 'hero_image_alt', widget: 'string', required: false, hint: 'Para leitores de ecrã e motores de busca.' }
+          - label: 'Números'
+            name: 'stats'
+            widget: 'list'
+            required: false
+            summary: '{{fields.value}} · {{fields.label}}'
+            fields:
+              - { label: 'Valor', name: 'value', widget: 'string', hint: 'Ex.: 30+' }
+              - { label: 'Legenda', name: 'label', widget: 'string', hint: 'Ex.: anos de carreira' }
+          - label: 'Sobre mim'
+            name: 'about'
+            widget: 'object'
+            fields:
+              - { label: 'Título', name: 'title', widget: 'string' }
+              - { label: 'Fotografia', name: 'image', widget: 'image', required: false }
+              - { label: 'Descrição da fotografia', name: 'image_alt', widget: 'string', required: false }
+              - { label: 'Texto', name: 'body', widget: 'markdown' }
+          - { label: 'Título do portfólio', name: 'portfolio_title', widget: 'string', required: false }
+          - label: 'Fotografias do portfólio (3)'
+            name: 'gallery'
+            widget: 'list'
+            required: false
+            summary: '{{fields.alt}}'
+            fields:
+              - { label: 'Imagem', name: 'image', widget: 'image' }
+              - { label: 'Descrição', name: 'alt', widget: 'string' }
+          - { label: 'Título dos serviços', name: 'services_title', widget: 'string', required: false }
+          - { label: 'Faixa de contacto: título', name: 'band_title', widget: 'string', required: false }
+          - { label: 'Faixa de contacto: texto', name: 'band_text', widget: 'string', required: false }
+      - label: 'Sobre'
+        name: 'about-page'
+        file: 'sobre.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Sobre' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
+          - { label: 'Permalink', name: 'permalink', widget: 'hidden', default: '/sobre/' }
+          - { label: 'Destaque', name: 'kicker', widget: 'string', required: false }
+          - { label: 'Título', name: 'headline', widget: 'string' }
+          - { label: 'Final do título (dourado, itálico)', name: 'headline_accent', widget: 'string', required: false }
+          - { label: 'Frase de abertura', name: 'lead', widget: 'text', required: false }
+          - { label: 'Texto', name: 'body', widget: 'markdown', required: false }
+          - { label: 'Fotografia', name: 'image', widget: 'image', required: false }
+          - { label: 'Descrição da fotografia', name: 'image_alt', widget: 'string', required: false }
+          - label: 'Números'
+            name: 'facts'
+            widget: 'list'
+            required: false
+            summary: '{{fields.value}} · {{fields.label}}'
+            fields:
+              - { label: 'Valor', name: 'value', widget: 'string' }
+              - { label: 'Legenda', name: 'label', widget: 'string' }
+          - { label: 'Percurso: destaque', name: 'timeline_kicker', widget: 'string', required: false }
+          - { label: 'Percurso: título', name: 'timeline_title', widget: 'string', required: false }
+          - label: 'Percurso'
+            name: 'timeline'
+            widget: 'list'
+            required: false
+            summary: '{{fields.year}} · {{fields.title}}'
+            fields:
+              - { label: 'Ano', name: 'year', widget: 'string' }
+              - { label: 'Título', name: 'title', widget: 'string' }
+              - { label: 'Texto', name: 'text', widget: 'text' }
+          - label: 'Formação'
+            name: 'training'
+            widget: 'list'
+            required: false
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Nome', name: 'name', widget: 'string' }
+              - { label: 'Detalhe', name: 'detail', widget: 'string', required: false, hint: 'Ex.: Barcelona · 1986, 1997' }
+          - label: 'Prémios'
+            name: 'awards'
+            widget: 'list'
+            required: false
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Nome', name: 'name', widget: 'string' }
+              - { label: 'Detalhe', name: 'detail', widget: 'string', required: false }
+              - { label: 'Ligação', name: 'url', widget: 'string', required: false }
+          - label: 'Línguas'
+            name: 'languages'
+            widget: 'list'
+            required: false
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Língua', name: 'name', widget: 'string' }
+              - { label: 'Nível', name: 'detail', widget: 'string', required: false }
+          - { label: 'Faixa de contacto: título', name: 'band_title', widget: 'string', required: false }
+          - { label: 'Faixa de contacto: texto', name: 'band_text', widget: 'string', required: false }
+      - label: 'Serviços'
+        name: 'services-page'
+        file: 'servicos.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Serviços' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'services' }
+          - { label: 'Permalink', name: 'permalink', widget: 'hidden', default: '/servicos/' }
+          - { label: 'Destaque', name: 'kicker', widget: 'string', required: false }
+          - { label: 'Título', name: 'headline', widget: 'string' }
+          - { label: 'Introdução', name: 'intro', widget: 'text', required: false, hint: 'A lista de serviços edita-se em "Conteúdos › Serviços".' }
+          - { label: 'Citação', name: 'quote', widget: 'text', required: false }
+          - { label: 'Faixa de contacto: título', name: 'band_title', widget: 'string', required: false }
+          - { label: 'Faixa de contacto: texto', name: 'band_text', widget: 'string', required: false }
+      - label: 'Portfólio'
+        name: 'portfolio-page'
+        file: 'portfolio.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Portfólio' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'portfolio' }
+          - { label: 'Permalink', name: 'permalink', widget: 'hidden', default: '/portfolio/' }
+          - { label: 'Destaque', name: 'kicker', widget: 'string', required: false }
+          - { label: 'Título', name: 'headline', widget: 'string', hint: 'Os trabalhos editam-se em "Conteúdos › Portfólio".' }
+          - label: 'Fotografias'
+            name: 'gallery'
+            widget: 'list'
+            required: false
+            summary: '{{fields.caption}}'
+            fields:
+              - { label: 'Imagem', name: 'image', widget: 'image' }
+              - { label: 'Legenda', name: 'caption', widget: 'string', required: false }
+              - { label: 'Descrição', name: 'alt', widget: 'string' }
+          - { label: 'Faixa de contacto: título', name: 'band_title', widget: 'string', required: false }
+          - { label: 'Faixa de contacto: texto', name: 'band_text', widget: 'string', required: false }
+      - label: 'Contactos'
+        name: 'contact-page'
+        file: 'contactos.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Contactos' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'contact' }
+          - { label: 'Permalink', name: 'permalink', widget: 'hidden', default: '/contactos/' }
+          - { label: 'Destaque', name: 'kicker', widget: 'string', required: false }
+          - { label: 'Título', name: 'headline', widget: 'string' }
+          - { label: 'Final do título (dourado, itálico)', name: 'headline_accent', widget: 'string', required: false }
+          - { label: 'Texto', name: 'body', widget: 'markdown', required: false, hint: 'O telefone, o email e a localidade editam-se em "Conteúdos › Definições".' }
+          - { label: 'Fotografia', name: 'image', widget: 'image', required: false }
+          - { label: 'Descrição da fotografia', name: 'image_alt', widget: 'string', required: false }
+          - label: 'Para quem'
+            name: 'audiences'
+            widget: 'list'
+            required: false
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Ícone', name: 'icon', widget: 'select', options: ['scissors', 'gem', 'clapperboard', 'award', 'phone', 'mail'] }
+              - { label: 'Título', name: 'title', widget: 'string' }
+              - { label: 'Texto', name: 'text', widget: 'text' }
+          - { label: 'Título da entrevista', name: 'podcast_title', widget: 'string', required: false, hint: 'A ligação é a primeira de "Conteúdos › Definições › Redes e ligações".' }
+
+  - name: 'data'
+    label: 'Conteúdos'
+    editor:
+      preview: false
+    files:
+      - label: 'Definições'
+        name: 'settings'
+        file: '_data/settings.yml'
+        fields:
+          - { label: 'Nome', name: 'name', widget: 'string' }
+          - { label: 'Profissão', name: 'tagline', widget: 'string' }
+          - { label: 'Telemóvel (como aparece)', name: 'phone', widget: 'string', hint: 'Ex.: +351 966 008 332' }
+          - { label: 'Telemóvel (para ligar)', name: 'phone_link', widget: 'string', hint: 'Sem espaços. Ex.: +351966008332' }
+          - { label: 'Email', name: 'email', widget: 'string' }
+          - { label: 'Localidade', name: 'location', widget: 'string', required: false }
+          - { label: 'Currículo (PDF)', name: 'cv', widget: 'file', required: false }
+          - label: 'Redes e ligações'
+            name: 'links'
+            widget: 'list'
+            required: false
+            summary: '{{fields.label}}'
+            fields:
+              - { label: 'Nome', name: 'label', widget: 'string', hint: 'Ex.: Instagram' }
+              - { label: 'Endereço', name: 'url', widget: 'string' }
+      - label: 'Serviços'
+        name: 'services'
+        file: '_data/services.yml'
+        fields:
+          - label: 'Serviços'
+            name: 'services'
+            widget: 'list'
+            summary: '{{fields.title}}'
+            fields:
+              - { label: 'Nome', name: 'title', widget: 'string' }
+              - { label: 'Resumo', name: 'summary', widget: 'text' }
+              - { label: 'Fotografia', name: 'image', widget: 'image', required: false }
+              - { label: 'Descrição da fotografia', name: 'image_alt', widget: 'string', required: false }
+              - { label: 'Inclui', name: 'items', widget: 'list', required: false, hint: 'Separados por vírgulas.' }
+              - { label: 'Texto do botão', name: 'cta', widget: 'string', required: false, hint: 'Ex.: Pedir marcação' }
+      - label: 'Portfólio'
+        name: 'portfolio'
+        file: '_data/portfolio.yml'
+        fields:
+          - label: 'Categorias'
+            name: 'categories'
+            widget: 'list'
+            summary: '{{fields.name}}'
+            fields:
+              - { label: 'Nome', name: 'name', widget: 'string', hint: 'Ex.: Cinema' }
+              - { label: 'Imagem', name: 'image', widget: 'image', required: false }
+              - { label: 'Descrição da imagem', name: 'image_alt', widget: 'string', required: false }
+              - { label: 'Anos', name: 'years', widget: 'string', required: false, hint: 'Ex.: 2013 — presente' }
+              - { label: 'Contagem (palavra)', name: 'count_label', widget: 'string', required: false, hint: 'Ex.: filmes. Mostra o número de trabalhos.' }
+              - { label: 'Resumo', name: 'summary', widget: 'string', required: false }
+              - label: 'Trabalhos'
+                name: 'credits'
+                widget: 'list'
+                summary: '{{fields.year}} · {{fields.title}}'
+                fields:
+                  - { label: 'Ano', name: 'year', widget: 'string' }
+                  - { label: 'Título', name: 'title', widget: 'string' }
+                  - { label: 'Sala / teatro', name: 'venue', widget: 'string', required: false, hint: 'Agrupa os trabalhos de teatro. Ex.: Teatro Politeama, Lisboa' }
+                  - { label: 'Produção / canal', name: 'producer', widget: 'string', required: false, hint: 'Ex.: RTP, TVI, La Féria' }
+                  - { label: 'Nota', name: 'note', widget: 'string', required: false, hint: 'Ex.: Prémio Sophia' }
+                  - { label: 'Destacar na página inicial', name: 'featured', widget: 'boolean', default: false, required: false }

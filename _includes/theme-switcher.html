@@ -1,0 +1,9 @@
+{%- comment -%}
+    Light / system / dark. "system" (the default) follows prefers-color-scheme.
+    The choice is stored in localStorage by the script in _layouts/default.html.
+{%- endcomment -%}
+<div class="theme-switcher" role="group" aria-label="Tema">
+    <button type="button" data-theme-choice="light" aria-pressed="false" title="Tema claro">{% include icon.html name="sun" %}<span class="visually-hidden">Tema claro</span></button>
+    <button type="button" data-theme-choice="system" aria-pressed="true" title="Seguir o sistema">{% include icon.html name="monitor" %}<span class="visually-hidden">Seguir o sistema</span></button>
+    <button type="button" data-theme-choice="dark" aria-pressed="false" title="Tema escuro">{% include icon.html name="moon" %}<span class="visually-hidden">Tema escuro</span></button>
+</div>

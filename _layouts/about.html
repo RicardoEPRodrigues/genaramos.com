@@ -1,0 +1,60 @@
+---
+layout: default
+---
+{%- comment -%} The Sobre page. Everything is front matter in sobre.md (CMS: Páginas › Sobre). {%- endcomment -%}
+{%- assign s = site.data.settings -%}
+<section class="shell about-hero">
+    <div class="about-hero__text">
+        {% include page-head.html %}
+        {% if page.lead %}<p class="about-hero__lead">{{ page.lead }}</p>{% endif %}
+        <div class="prose">{{ content }}</div>
+        <div class="actions">
+            {% if s.cv %}<a class="btn btn--primary" href="{{ s.cv | relative_url }}" download>Descarregar CV{% include icon.html name="download" %}</a>{% endif %}
+            {% for l in s.links limit: 1 %}<a class="btn btn--ghost" href="{{ l.url }}" target="_blank" rel="noopener">Ouvir entrevista{% include icon.html name="circle-play" %}</a>{% endfor %}
+        </div>
+    </div>
+    {% if page.image %}<img class="about-hero__photo" src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">{% endif %}
+</section>
+
+{% if page.facts %}
+<section class="stats">
+    <div class="shell stats__row">
+        {% for f in page.facts %}
+            <div class="stats__item"><span class="stats__value">{{ f.value }}</span><span class="stats__label">{{ f.label }}</span></div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<section class="shell section journey">
+    <div class="journey__main">
+        {% if page.timeline_kicker %}<p class="kicker">{{ page.timeline_kicker }}</p>{% endif %}
+        {% if page.timeline_title %}<h2 class="section__title">{{ page.timeline_title }}</h2>{% endif %}
+        <ol class="timeline">
+            {% for t in page.timeline %}
+                <li><span class="timeline__year">{{ t.year }}</span><div><h3 class="timeline__title">{{ t.title }}</h3><p>{{ t.text }}</p></div></li>
+            {% endfor %}
+        </ol>
+    </div>
+    <aside class="journey__side">
+        {%- assign groups = "Formação|training,Prémios|awards,Línguas|languages" | split: "," -%}
+        {% for g in groups %}
+            {%- assign parts = g | split: "|" -%}
+            {%- assign key = parts[1] -%}
+            {%- assign list = page[key] -%}
+            {% if list.size > 0 %}
+                <div class="fact-group">
+                    <p class="kicker">{{ parts[0] }}</p>
+                    <ul>
+                        {% for i in list %}
+                            <li><span class="fact-group__name">{% if i.url %}<a href="{{ i.url }}" target="_blank" rel="noopener">{{ i.name }}</a>{% else %}{{ i.name }}{% endif %}</span><span class="fact-group__detail">{{ i.detail }}</span></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        {% endfor %}
+        {% if s.cv %}<a class="text-link" href="{{ s.cv | relative_url }}" download>{% include icon.html name="file-down" %}Currículo (PDF)</a>{% endif %}
+    </aside>
+</section>
+
+{% include contact-band.html %}

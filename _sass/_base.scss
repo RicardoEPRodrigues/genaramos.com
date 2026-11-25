@@ -1,0 +1,125 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: $font-body;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { font-family: $font-display; font-weight: 400; line-height: 1.1; margin: 0; }
+em { font-style: italic; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+figure { margin: 0; }
+button { font: inherit; color: inherit; }
+
+.icon { width: 18px; height: 18px; flex: none; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute; left: 16px; top: -60px; z-index: 10;
+  padding: 10px 16px; background: var(--accent-fill); color: var(--on-accent);
+  &:focus { top: 16px; }
+}
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.shell {
+  width: 100%;
+  max-width: $shell;
+  margin: 0 auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  @media #{$tablet} { padding-left: 40px; padding-right: 40px; }
+  @media #{$phone} { padding-left: $gutter-small; padding-right: $gutter-small; }
+}
+
+.logo--for-dark { display: var(--logo-dark); }
+.logo--for-light { display: var(--logo-light); }
+
+.kicker { @include caps(15px); color: var(--accent); margin-bottom: 20px; }
+
+.stats__label { @include caps(13px); color: var(--subtle); }
+
+.btn {
+  @include caps(15px);
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 17px 30px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .15s, border-color .15s;
+}
+.btn--primary { background: var(--accent-fill); color: var(--on-accent); }
+.btn--primary:hover { background: #FFD66A; }
+.btn--outline { border-color: var(--accent); color: var(--accent); padding: 12px 22px; font-size: 14px; }
+.btn--ghost { border-color: var(--rule-strong); color: var(--text); }
+.btn--ghost:hover, .btn--outline:hover { border-color: var(--text); }
+
+.text-link {
+  @include caps(15px);
+  display: inline-flex; align-items: center; gap: 10px;
+  color: var(--accent); text-decoration: none;
+  &:hover { text-decoration: underline; text-underline-offset: 5px; }
+}
+
+.actions { display: flex; flex-wrap: wrap; gap: 16px; }
+
+.prose {
+  color: var(--muted);
+  p + p { margin-top: 1em; }
+  a { color: var(--text); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+}
+
+.section { padding-top: 120px; padding-bottom: 120px; @media #{$phone} { padding-top: 72px; padding-bottom: 72px; } }
+.section--surface { background: var(--surface); }
+.section__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 56px; }
+.section__title { font-size: 54px; @media #{$tablet} { font-size: 42px; } @media #{$phone} { font-size: 34px; } }
+.section__title--narrow { max-width: 760px; margin-bottom: 56px; }
+
+/* Page heads: kicker + big serif title with an optional gold italic accent. */
+.page-head__title {
+  font-size: 80px; line-height: 1.02;
+  em { color: var(--accent); }
+  @media #{$tablet} { font-size: 60px; }
+  @media #{$phone} { font-size: 44px; }
+}
+
+/* Gold contact band. */
+.band { background: var(--accent-fill); color: var(--on-accent); padding: 96px 0; @media #{$phone} { padding: 64px 0; } }
+.band__row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 48px; }
+.band__text { display: flex; flex-direction: column; gap: 16px; font-size: 19px; }
+.band__title { font-style: italic; font-size: 76px; @media #{$phone} { font-size: 46px; } }
+.band__details { display: flex; flex-direction: column; gap: 18px; width: 440px; max-width: 100%; }
+.band__details a {
+  display: flex; align-items: center; gap: 16px; padding-bottom: 14px;
+  border-bottom: 1.5px solid var(--on-accent);
+  font-family: $font-display; font-size: 30px; text-decoration: none;
+  .icon { width: 24px; height: 24px; }
+  @media #{$phone} { font-size: 22px; }
+}
+
+/* Credit lists (title, year, optional tag). */
+.credit-rows li {
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 12px 0; border-bottom: 1px solid var(--rule);
+  break-inside: avoid;
+}
+.credit-rows__title { font-size: 17px; }
+.credit-rows__year { @include caps(13px); color: var(--subtle); white-space: nowrap; }
+.credit-rows__tag { @include caps(12px); color: var(--accent); }
+.credit-rows--compact li { gap: 20px; padding: 14px 0; }
+.credit-rows--compact .credit-rows__year { order: -1; }
+.credits-name { font-style: italic; font-size: 30px; color: var(--accent); margin-bottom: 16px; }

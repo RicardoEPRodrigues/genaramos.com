@@ -1,0 +1,13 @@
+.DS_Store
+_site
+.sass-cache
+.jekyll-cache
+Gemfile.lock
+.bundle
+vendor/
+
+# Full CV with private details. Only the one-page public CV (assets/uploads/cv-gena-ramos.pdf) is published.
+pen/*full*.pdf
+
+# Raw image downloads from the old Google Sites page. Kept locally only.
+pen/images/old/

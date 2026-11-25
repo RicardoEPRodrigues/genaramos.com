@@ -1,0 +1,12 @@
+{%- assign s = site.data.settings -%}
+<footer class="site-footer">
+    <div class="shell site-footer__bar">
+        <a class="site-footer__logo" href="{{ '/' | relative_url }}">{% include logo.html full=true %}</a>
+        <ul class="site-footer__nav">{% include nav-links.html %}</ul>
+        <div class="site-footer__meta">
+            <a href="tel:{{ s.phone_link }}">{{ s.phone }}</a>
+            <a href="mailto:{{ s.email }}">{{ s.email }}</a>
+            <span>&copy; {{ site.time | date: "%Y" }} {{ s.name }}</span>
+        </div>
+    </div>
+</footer>

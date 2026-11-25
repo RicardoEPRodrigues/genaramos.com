@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{%- comment -%} Services come from _data/services.yml (CMS: Conteúdos › Serviços); the head from servicos.md. {%- endcomment -%}
+<section class="shell page-intro">
+    {% include page-head.html %}
+    <div class="page-intro__aside">
+        {% if page.intro %}<p>{{ page.intro }}</p>{% endif %}
+        <ul class="chips">
+            {% for s in site.data.services.services %}
+                <li><a href="#{{ s.title | slugify }}">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }} {{ s.title | split: "," | first }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+{% for s in site.data.services.services %}
+    <section class="shell service{% cycle '', ' service--flip' %}" id="{{ s.title | slugify }}">
+        {% if s.image %}<img class="service__photo" src="{{ s.image | relative_url }}" alt="{{ s.image_alt }}" loading="lazy">{% endif %}
+        <div class="service__text">
+            <span class="service__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+            <h2 class="service__title">{{ s.title }}</h2>
+            <p class="service__summary">{{ s.summary }}</p>
+            {% if s.items.size > 0 %}
+                <ul class="checklist">{% for i in s.items %}<li>{% include icon.html name="check" %}{{ i }}</li>{% endfor %}</ul>
+            {% endif %}
+            <a class="text-link" href="{{ '/contactos/' | relative_url }}">{{ s.cta | default: "Contacte-me" }}{% include icon.html name="arrow-right" %}</a>
+        </div>
+    </section>
+{% endfor %}
+
+{% if page.quote %}
+<section class="quote">
+    <div class="shell">
+        {% include icon.html name="quote" %}
+        <blockquote>{{ page.quote }}</blockquote>
+        <p class="quote__by">{{ site.data.settings.name }}</p>
+    </div>
+</section>
+{% endif %}
+
+{% include contact-band.html %}

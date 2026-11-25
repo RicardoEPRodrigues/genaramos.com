@@ -1,0 +1,11 @@
+{%- comment -%}
+    Both logo versions are in the page; CSS shows the one that suits the theme.
+    Pass full=true for the full logo with the name, otherwise the GR monogram.
+{%- endcomment -%}
+{%- if include.full -%}
+    <img class="logo logo--for-dark" src="{{ site.logo | relative_url }}" alt="{{ site.data.settings.name }}" width="600" height="518">
+    <img class="logo logo--for-light" src="{{ site.logo-light-theme | relative_url }}" alt="{{ site.data.settings.name }}" width="600" height="518">
+{%- else -%}
+    <img class="logo logo--for-dark" src="{{ site.monogram | relative_url }}" alt="" width="600" height="393">
+    <img class="logo logo--for-light" src="{{ site.monogram-light-theme | relative_url }}" alt="" width="600" height="393">
+{%- endif -%}

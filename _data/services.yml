@@ -1,0 +1,33 @@
+services:
+  - title: Cabelos
+    summary: Para o dia a dia ou para uma ocasião especial, com um acabamento natural e pensado para si.
+    image: /assets/uploads/curls.jpg
+    image_alt: Cabelo comprido com caracóis largos
+    cta: Pedir marcação
+    items:
+      - Corte personalizado
+      - Penteados para todas as ocasiões
+      - Coloração, madeixas e balayage
+      - Ombré
+      - Tratamentos para saúde e brilho
+      - Alisamento e ondulação
+      - Brushing para o dia a dia ou eventos
+  - title: Casamentos
+    summary: Penteados de noiva pensados ao pormenor, para que o cabelo dure o dia inteiro e fique bem em todas as fotografias.
+    image: /assets/uploads/bridal-updo.jpg
+    image_alt: Penteado apanhado com caracóis a ser finalizado
+    cta: Falar sobre o casamento
+    items:
+      - Penteado de noiva
+      - Apanhados e semi-apanhados
+      - Penteados de época
+  - title: Espectáculos, Cinema e TV
+    summary: "Trabalho cénico de cabeleireira: penteados e perucas criados para cada personagem e mantidos ao longo de toda a produção."
+    image: /assets/uploads/wig.jpg
+    image_alt: Peruca de época com caracóis num suporte de camarim
+    cta: Pedir orçamento
+    items:
+      - Penteados de época e contemporâneos
+      - Criação e manutenção de perucas
+      - Cinema, televisão, teatro, ópera e musicais
+      - Acompanhamento em rodagem e em temporada

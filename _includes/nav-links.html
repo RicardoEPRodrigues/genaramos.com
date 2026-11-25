@@ -1,0 +1,6 @@
+{%- comment -%} The menu, in order. Marks the current page. {%- endcomment -%}
+{%- assign items = "Início|/,Sobre|/sobre/,Serviços|/servicos/,Portfólio|/portfolio/,Contactos|/contactos/" | split: "," -%}
+{%- for item in items -%}
+    {%- assign parts = item | split: "|" -%}
+    <li><a href="{{ parts[1] | relative_url }}"{% if page.url == parts[1] %} aria-current="page"{% endif %}>{{ parts[0] }}</a></li>
+{%- endfor -%}

@@ -1,0 +1,83 @@
+categories:
+  - name: Cinema
+    years: "2013 — presente"
+    count_label: filmes
+    image: /assets/uploads/film-period.jpg
+    image_alt: Actriz com penteado de época numa rodagem
+    credits:
+      - { year: "2013", title: "Os Imortais", featured: true }
+      - { year: "2017", title: "Jacinta", featured: true }
+      - { year: "2019", title: "Variações", note: "Prémio Sophia 2020", featured: true }
+      - { year: "2021", title: "Joyeuse retraite! 2", featured: true }
+      - { year: "2021", title: "Fada do Lar", featured: true }
+  - name: Televisão
+    years: "2014 — presente"
+    count_label: séries e novelas
+    image: /assets/uploads/film-set.jpg
+    image_alt: Cabeleireira a pentear um actor numa rodagem
+    credits:
+      - { year: "2014", title: "Beijo do Escorpião" }
+      - { year: "2014", title: "Água de Mar" }
+      - { year: "2015", title: "Santa Barbara" }
+      - { year: "2015", title: "Ministério do Tempo" }
+      - { year: "2015", title: "Mulheres Assim" }
+      - { year: "2016", title: "Massa Fresca" }
+      - { year: "2016", title: "Inspector Max" }
+      - { year: "2018", title: "A Teia" }
+      - { year: "2018", title: "3 Mulheres" }
+      - { year: "2020", title: "Golpe de Sorte" }
+      - { year: "2020", title: "A Generala" }
+      - { year: "2021", title: "A Lista" }
+      - { year: "2021, 2024", title: "Patrões Fora" }
+      - { year: "2021", title: "História do Teatro" }
+      - { year: "2022", title: "Lua de Mel" }
+      - { year: "2022", title: "Marco Paulo", featured: true }
+      - { year: "2022", title: "Lúcia", featured: true }
+      - { year: "2023", title: "Turistas" }
+      - { year: "2023", title: "A Travessia", featured: true }
+      - { year: "2024", title: "Tony", featured: true }
+      - { year: "2024", title: "Vizinhos", featured: true }
+      - { year: "2024", title: "Lume", featured: true }
+  - name: Teatro
+    years: "2000 — presente"
+    count_label: espectáculos
+    summary: De musicais e revista à ópera.
+    image: /assets/uploads/evita.jpg
+    image_alt: Cartaz do musical Evita
+    credits:
+      - { year: "2000, 2017", title: "Musical Amália", venue: "Teatro Politeama, Lisboa", featured: true }
+      - { year: "2000", title: "My Fair Lady", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2003", title: "O Principezinho", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2007", title: "Música no Coração", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2008", title: "Jesus Cristo Super Star", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2008", title: "West Side Story", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2008", title: "Um Violino no Telhado", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2016", title: "As Árvores Morrem de Pé", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2016", title: "A Pequena Sereia", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2017", title: "A Comédia Fantástica", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2017", title: "Aladino", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2018", title: "Rapunzel", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2018", title: "Rainha do Gelo", venue: "Teatro Politeama, Lisboa" }
+      - { year: "2019", title: "Severa", venue: "Teatro Politeama, Lisboa", featured: true }
+      - { year: "2015", title: "Macbeth", venue: "Teatro Nacional de São Carlos, Lisboa" }
+      - { year: "2015", title: "Peter Grimes", venue: "Teatro Nacional de São Carlos, Lisboa" }
+      - { year: "2016", title: "Anna Bolena", venue: "Teatro Nacional de São Carlos, Lisboa" }
+      - { year: "2018", title: "Idomeneo", venue: "Teatro Nacional de São Carlos, Lisboa" }
+      - { year: "2018", title: "I Capuleti e i Montecchi", venue: "Teatro Nacional de São Carlos, Lisboa" }
+      - { year: "2018", title: "La Traviata", venue: "Teatro Nacional de São Carlos, Lisboa", featured: true }
+      - { year: "2018", title: "Carmen", venue: "Teatro Nacional de São Carlos, Lisboa", featured: true }
+      - { year: "2009", title: "Arre Poter que é de Mais", venue: "Teatro Maria Vitória, Lisboa" }
+      - { year: "2010", title: "Vai de Mail a Pior", venue: "Teatro Maria Vitória, Lisboa" }
+      - { year: "2012", title: "Humor com Humor se Paga", venue: "Teatro Maria Vitória, Lisboa" }
+      - { year: "2011", title: "Comboio da Madrugada", venue: "Teatro Experimental de Cascais" }
+      - { year: "2011", title: "Bruxas de Salem", venue: "Teatro Experimental de Cascais" }
+      - { year: "2013", title: "Viagem à Volta da Parvónia", venue: "Teatro Experimental de Cascais" }
+      - { year: "2015", title: "A Noite das Mil Estrelas", venue: "Casino Estoril" }
+      - { year: "2018", title: "O Musical da Minha Vida", venue: "Casino Estoril" }
+      - { year: "2025", title: "Baião D'Oxigénio", venue: "Outras produções", featured: true }
+      - { year: "2026", title: "Evita", venue: "Outras produções", featured: true }
+  - name: Diversos
+    summary: Videoclipes e grandes eventos.
+    credits:
+      - { year: "2016", title: "Videoclip para The Guest" }
+      - { year: "2018", title: "Eurovisão" }

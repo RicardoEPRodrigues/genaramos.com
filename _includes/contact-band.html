@@ -1,0 +1,14 @@
+{%- comment -%} The gold band before the footer. Title and text come from the page's band_title and band_text. {%- endcomment -%}
+{%- assign s = site.data.settings -%}
+<section class="band">
+    <div class="shell band__row">
+        <div class="band__text">
+            <h2 class="band__title">{{ page.band_title | default: "Vamos conversar?" }}</h2>
+            {% if page.band_text %}<p>{{ page.band_text }}</p>{% endif %}
+        </div>
+        <ul class="band__details">
+            <li><a href="tel:{{ s.phone_link }}">{% include icon.html name="phone" %}<span>{{ s.phone }}</span></a></li>
+            <li><a href="mailto:{{ s.email }}">{% include icon.html name="mail" %}<span>{{ s.email }}</span></a></li>
+        </ul>
+    </div>
+</section>

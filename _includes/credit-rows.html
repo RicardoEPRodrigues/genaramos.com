@@ -1,0 +1,10 @@
+{%- comment -%} A list of credits. Pass credits= (an array). {%- endcomment -%}
+<ul class="credit-rows">
+    {%- for c in include.credits -%}
+        <li>
+            <span class="credit-rows__title">{{ c.title }}</span>
+            <span class="credit-rows__year">{{ c.year }}</span>
+            {%- if c.note or c.producer -%}<span class="credit-rows__tag">{{ c.note | default: c.producer }}</span>{%- endif -%}
+        </li>
+    {%- endfor -%}
+</ul>

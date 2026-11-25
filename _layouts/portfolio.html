@@ -1,0 +1,63 @@
+---
+layout: default
+---
+{%- comment -%}
+    Credits come from _data/portfolio.yml (CMS: Conteúdos › Portfólio). Counts are worked out from it.
+    Credits with a venue (theatre) are grouped by venue; "Teatro Politeama, Lisboa" shows as name and city.
+{%- endcomment -%}
+{%- assign cats = site.data.portfolio.categories -%}
+<section class="shell page-intro page-intro--end">
+    {% include page-head.html %}
+    <div class="counts">
+        {% for cat in cats %}{% if cat.count_label %}
+            <div><span class="counts__value">{{ cat.credits.size }}</span><span class="stats__label">{{ cat.count_label }}</span></div>
+        {% endif %}{% endfor %}
+    </div>
+</section>
+
+{% if page.gallery %}
+<div class="shell gallery">
+    {% for g in page.gallery %}
+        <figure class="gallery__item"><img src="{{ g.image | relative_url }}" alt="{{ g.alt }}" loading="lazy">{% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}</figure>
+    {% endfor %}
+</div>
+{% endif %}
+
+<div class="filter-bar"><div class="shell filter-bar__inner">
+    <div class="filter-tabs" role="group" aria-label="Filtrar por área" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">Todos</button>
+        {% for cat in cats %}<button type="button" data-filter="{{ cat.name | slugify }}" aria-pressed="false">{{ cat.name }}</button>{% endfor %}
+    </div>
+    {% if site.data.settings.cv %}<a class="text-link" href="{{ site.data.settings.cv | relative_url }}" download>{% include icon.html name="file-down" %}Currículo (PDF)</a>{% endif %}
+</div></div>
+
+<div class="shell section credits">
+    {% for cat in cats %}
+        <section class="credits__cat" id="{{ cat.name | slugify }}" data-category="{{ cat.name | slugify }}">
+            <header class="credits__head">
+                <h2 class="credits-name">{{ cat.name }}</h2>
+                {% if cat.years %}<p class="stats__label">{{ cat.years }}</p>{% endif %}
+                <p class="credits__summary">{% if cat.count_label %}{{ cat.credits.size }} {{ cat.count_label }}. {% endif %}{{ cat.summary }}</p>
+            </header>
+            <div class="credits__body">
+                {%- assign venues = cat.credits | group_by: "venue" -%}
+                {% for v in venues %}
+                    {% if v.name != "" %}
+                        {%- assign vparts = v.name | split: ", " -%}
+                        {%- assign first = 9999 -%}{%- assign last = 0 -%}
+                        {%- for c in v.items -%}
+                            {%- assign y1 = c.year | slice: 0, 4 | plus: 0 -%}
+                            {%- assign ylast = c.year | split: ", " | last | slice: 0, 4 | plus: 0 -%}
+                            {%- if y1 < first -%}{%- assign first = y1 -%}{%- endif -%}
+                            {%- if ylast > last -%}{%- assign last = ylast -%}{%- endif -%}
+                        {%- endfor -%}
+                        <h3 class="credits__venue">{{ vparts[0] }} <span class="stats__label">{% if vparts[1] %}{{ vparts[1] }} · {% endif %}{{ first }}{% if last != first %} — {{ last }}{% endif %}</span></h3>
+                    {% endif %}
+                    {% include credit-rows.html credits=v.items %}
+                {% endfor %}
+            </div>
+        </section>
+    {% endfor %}
+</div>
+
+{% include contact-band.html %}

@@ -1,0 +1,35 @@
+# Site settings. Contact details, tagline and social links live in _data/settings.yml
+# (edited in the CMS as "Definições"), not here.
+title: Gena Ramos
+description: Cabeleireira profissional com mais de 30 anos de experiência em cinema, teatro e televisão.
+lang: pt-PT
+locale: pt_PT
+
+url: https://www.genaramos.com
+baseurl: ""
+
+permalink: /:title/
+
+# Images referenced by the layouts.
+logo: /assets/images/logo-gold-white.png
+logo-light-theme: /assets/images/logo-gold-black.png
+monogram: /assets/images/monogram-gold-white.png
+monogram-light-theme: /assets/images/monogram-gold-black.png
+image: /assets/images/og-image.jpg
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - CLAUDE.md
+  - logo-design
+  - pen
+  - vendor

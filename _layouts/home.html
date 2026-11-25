@@ -1,0 +1,92 @@
+---
+layout: default
+---
+{%- comment -%}
+    The home page. Its words live in the front matter of index.md (CMS: Páginas › Início).
+    Featured credits come from _data/portfolio.yml and services from _data/services.yml.
+{%- endcomment -%}
+<section class="hero">
+    <div class="hero__text">
+        {% if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
+        <h1 class="hero__title">{{ page.headline }}{% if page.headline_accent %} <em>{{ page.headline_accent }}</em>{% endif %}</h1>
+        {% if page.intro %}<p class="hero__lead">{{ page.intro }}</p>{% endif %}
+        <div class="actions">
+            <a class="btn btn--primary" href="{{ '/portfolio/' | relative_url }}">Ver portfólio{% include icon.html name="arrow-right" %}</a>
+            <a class="btn btn--ghost" href="{{ '/servicos/' | relative_url }}">Serviços</a>
+        </div>
+    </div>
+    {% if page.hero_image %}
+        <div class="hero__photo"><img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_image_alt }}"></div>
+    {% endif %}
+</section>
+
+{% if page.stats %}
+<section class="stats">
+    <div class="shell stats__row">
+        {% for s in page.stats %}
+            <div class="stats__item"><span class="stats__value">{{ s.value }}</span><span class="stats__label">{{ s.label }}</span></div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% if page.about %}
+<section class="shell section split">
+    {% if page.about.image %}<img class="split__photo" src="{{ page.about.image | relative_url }}" alt="{{ page.about.image_alt }}">{% endif %}
+    <div class="split__text">
+        <p class="kicker">Sobre mim</p>
+        <h2 class="section__title">{{ page.about.title }}</h2>
+        <div class="prose">{{ page.about.body | markdownify }}</div>
+        <a class="text-link" href="{{ '/sobre/' | relative_url }}">Conhecer o percurso{% include icon.html name="arrow-right" %}</a>
+    </div>
+</section>
+{% endif %}
+
+<section class="section section--surface">
+    <div class="shell">
+        <div class="section__head">
+            <div>
+                <p class="kicker">Portfólio</p>
+                <h2 class="section__title">{{ page.portfolio_title | default: "Trabalho selecionado" }}</h2>
+            </div>
+            <a class="text-link" href="{{ '/portfolio/' | relative_url }}">Ver tudo{% include icon.html name="arrow-right" %}</a>
+        </div>
+        {% if page.gallery %}
+            <div class="home-gallery">
+                {% for g in page.gallery limit: 3 %}<img src="{{ g.image | relative_url }}" alt="{{ g.alt }}" loading="lazy">{% endfor %}
+            </div>
+        {% endif %}
+        <div class="featured-credits">
+            {% for cat in site.data.portfolio.categories %}
+                {%- assign featured = cat.credits | where: "featured", true | sort: "year" | reverse -%}
+                {% if featured.size > 0 %}
+                    <div>
+                        <h3 class="credits-name">{{ cat.name }}</h3>
+                        <ul class="credit-rows credit-rows--compact">
+                            {% for c in featured limit: 6 %}
+                                <li><span class="credit-rows__year">{{ c.year | slice: 0, 4 }}</span><span class="credit-rows__title">{{ c.title }}</span>{% if c.note %}<span class="credit-rows__tag">{{ c.note }}</span>{% endif %}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="shell section">
+    <p class="kicker">Serviços</p>
+    <h2 class="section__title section__title--narrow">{{ page.services_title }}</h2>
+    <div class="cards">
+        {% for s in site.data.services.services %}
+            <a class="card" href="{{ '/servicos/' | relative_url }}#{{ s.title | slugify }}">
+                {% if s.image %}<img src="{{ s.image | relative_url }}" alt="{{ s.image_alt }}" loading="lazy">{% endif %}
+                <span class="card__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+                <span class="card__title">{{ s.title }}</span>
+                <span class="card__text">{{ s.summary }}</span>
+            </a>
+        {% endfor %}
+    </div>
+</section>
+
+{% include contact-band.html %}

@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{%- comment -%} The Contactos page. Phone, email and location come from _data/settings.yml. {%- endcomment -%}
+{%- assign s = site.data.settings -%}
+<section class="contact-hero">
+    <div class="contact-hero__text">
+        {% include page-head.html %}
+        <div class="contact-hero__lead">{{ content }}</div>
+        <ul class="contact-rows">
+            <li><span class="contact-rows__icon">{% include icon.html name="phone" %}</span><span><span class="stats__label">Telemóvel</span><a href="tel:{{ s.phone_link }}">{{ s.phone }}</a></span></li>
+            <li><span class="contact-rows__icon">{% include icon.html name="mail" %}</span><span><span class="stats__label">Email</span><a href="mailto:{{ s.email }}">{{ s.email }}</a></span></li>
+            {% if s.location %}<li><span class="contact-rows__icon">{% include icon.html name="map-pin" %}</span><span><span class="stats__label">Onde</span><span>{{ s.location }}</span></span></li>{% endif %}
+        </ul>
+        <div class="actions">
+            <a class="btn btn--primary" href="tel:{{ s.phone_link }}">Ligar agora{% include icon.html name="phone" %}</a>
+            <a class="btn btn--ghost" href="mailto:{{ s.email }}">Enviar email{% include icon.html name="mail" %}</a>
+        </div>
+    </div>
+    {% if page.image %}<div class="contact-hero__photo"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}"></div>{% endif %}
+</section>
+
+{% if page.audiences %}
+<section class="audiences">
+    <div class="shell audiences__row">
+        {% for a in page.audiences %}
+            <div class="audiences__item">{% include icon.html name=a.icon %}<h2 class="audiences__title">{{ a.title }}</h2><p>{{ a.text }}</p></div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% for l in s.links limit: 1 %}
+<section class="shell section podcast">
+    <div>
+        <p class="kicker">Entrevista</p>
+        <h2 class="section__title">{{ page.podcast_title | default: l.label }}</h2>
+    </div>
+    <a class="btn btn--ghost" href="{{ l.url }}" target="_blank" rel="noopener">Ouvir no YouTube{% include icon.html name="circle-play" %}</a>
+</section>
+{% endfor %}

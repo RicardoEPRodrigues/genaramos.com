@@ -1,0 +1,4 @@
+<header class="page-head">
+    {% if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
+    <h1 class="page-head__title">{{ page.headline | default: page.title }}{% if page.headline_accent %} <em>{{ page.headline_accent }}</em>{% endif %}</h1>
+</header>

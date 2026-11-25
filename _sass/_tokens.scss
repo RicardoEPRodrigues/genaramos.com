@@ -1,0 +1,71 @@
+/* Design tokens. Names match the variables in pen/genaramos.pen.
+   The palette is generated in OKLCH from the logo colours (gold #FECE45, ink #141414, navy #000061).
+   Use the semantic tokens (--bg, --text, --accent...) in components, never palette steps directly. */
+
+$font-display: "Playfair Display", Georgia, serif;
+$font-caps: "Barlow Condensed", "Arial Narrow", sans-serif;
+$font-body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+
+$shell: 1440px;
+$gutter: 80px;
+$gutter-small: 20px;
+
+$tablet: "(max-width: 1050px)";
+$phone: "(max-width: 700px)";
+
+$gold-50: #FFFAED;  $gold-400: #FECE45;  $gold-700: #907001;
+$neutral-200: #E4E4E4; $neutral-400: #ABABAB; $neutral-500: #808080; $neutral-600: #636363;
+$neutral-700: #4D4D4D; $neutral-800: #2E2E2E; $neutral-900: #1E1E1E; $neutral-950: #141414;
+
+@mixin dark-tokens {
+  --bg: #{$neutral-950};
+  --bg-clear: rgba(20, 20, 20, 0);
+  --surface: #{$neutral-900};
+  --text: #FFFFFF;
+  --muted: #{$neutral-400};
+  --subtle: #{$neutral-500};
+  --rule: #{$neutral-800};
+  --rule-strong: rgba(255, 255, 255, 0.33);
+  --accent: #{$gold-400};
+  --accent-fill: #{$gold-400};
+  --on-accent: #{$neutral-950};
+  --fade-stop: 40%;
+  --logo-dark: inline-block;
+  --logo-light: none;
+  color-scheme: dark;
+}
+
+@mixin light-tokens {
+  --bg: #FFFFFF;
+  --bg-clear: rgba(255, 255, 255, 0);
+  --surface: #{$gold-50};
+  --text: #{$neutral-950};
+  --muted: #{$neutral-700};
+  --subtle: #{$neutral-600};
+  --rule: #{$neutral-200};
+  --rule-strong: rgba(20, 20, 20, 0.2);
+  --accent: #{$gold-700};
+  --accent-fill: #{$gold-400};
+  --on-accent: #{$neutral-950};
+  --fade-stop: 15%;
+  --logo-dark: none;
+  --logo-light: inline-block;
+  color-scheme: light;
+}
+
+/* Dark by default; light when the system asks for it, unless the visitor chose dark;
+   an explicit choice (data-theme on <html>) always wins. */
+:root { @include dark-tokens; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) { @include light-tokens; }
+}
+:root[data-theme="light"] { @include light-tokens; }
+
+/* Small spaced capitals: kickers, nav, buttons, labels. */
+@mixin caps($size: 14px) {
+  font-family: $font-caps;
+  font-size: $size;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}

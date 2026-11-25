@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'pt-PT' }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <script>
+        /* Apply a stored theme before the page paints. No stored theme means "system". */
+        (function () {
+            try {
+                var t = localStorage.getItem("theme");
+                if (t === "light" || t === "dark") { document.documentElement.setAttribute("data-theme", t); }
+            } catch (e) {}
+        })();
+    </script>
+    {% seo %}
+    {% include favicon.html %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600&family=Playfair+Display:ital@0;1&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+    <a class="skip-link" href="#content">Saltar para o conteúdo</a>
+    {% include site-header.html %}
+    <main id="content">
+        {{ content }}
+    </main>
+    {% include site-footer.html %}
+    <script>
+        (function () {
+            var root = document.documentElement;
+
+            /* Theme switcher: light, dark, or follow the system (removes the stored choice). */
+            var buttons = document.querySelectorAll("[data-theme-choice]");
+            function current() {
+                var t = root.getAttribute("data-theme");
+                return t === "light" || t === "dark" ? t : "system";
+            }
+            function sync() {
+                var c = current();
+                buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-theme-choice") === c)); });
+            }
+            buttons.forEach(function (b) {
+                b.addEventListener("click", function () {
+                    var c = b.getAttribute("data-theme-choice");
+                    try {
+                        if (c === "system") { localStorage.removeItem("theme"); } else { localStorage.setItem("theme", c); }
+                    } catch (e) {}
+                    if (c === "system") { root.removeAttribute("data-theme"); } else { root.setAttribute("data-theme", c); }
+                    sync();
+                });
+            });
+            sync();
+
+            /* Mobile menu. */
+            var toggle = document.querySelector(".nav-toggle");
+            if (toggle) {
+                toggle.addEventListener("click", function () {
+                    var open = toggle.getAttribute("aria-expanded") !== "true";
+                    toggle.setAttribute("aria-expanded", String(open));
+                    document.body.classList.toggle("nav-open", open);
+                });
+            }
+
+            /* Portfolio filter tabs. Without JavaScript the tabs stay hidden and everything shows. */
+            var tabs = document.querySelectorAll("[data-filter]");
+            if (tabs.length) {
+                document.querySelector(".filter-tabs").hidden = false;
+                var sections = document.querySelectorAll("[data-category]");
+                tabs.forEach(function (tab) {
+                    tab.addEventListener("click", function () {
+                        var f = tab.getAttribute("data-filter");
+                        tabs.forEach(function (t) { t.setAttribute("aria-pressed", String(t === tab)); });
+                        sections.forEach(function (s) { s.hidden = f !== "all" && s.getAttribute("data-category") !== f; });
+                        /* If the bar is stuck at the top, bring the start of the results back under it. */
+                        var bar = document.querySelector(".filter-bar");
+                        if (bar.getBoundingClientRect().top <= 1) {
+                            var credits = document.querySelector(".credits");
+                            window.scrollTo({ top: credits.getBoundingClientRect().top + window.pageYOffset - bar.offsetHeight });
+                        }
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

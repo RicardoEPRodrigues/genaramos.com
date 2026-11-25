@@ -1,0 +1,19 @@
+<header class="site-header">
+    <div class="shell site-header__bar">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.data.settings.name }}, página inicial">{% include logo.html %}</a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Principal">
+            <ul>{% include nav-links.html %}</ul>
+        </nav>
+
+        <div class="site-header__actions">
+            {% include theme-switcher.html %}
+            <a class="btn btn--outline site-header__cta" href="{{ '/contactos/' | relative_url }}">Contacte-me</a>
+            <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+                <span class="nav-toggle__open">{% include icon.html name="menu" %}</span>
+                <span class="nav-toggle__close">{% include icon.html name="x" %}</span>
+                <span class="visually-hidden">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
