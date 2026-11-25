@@ -2,7 +2,6 @@
 _site
 .sass-cache
 .jekyll-cache
-Gemfile.lock
 .bundle
 vendor/
 

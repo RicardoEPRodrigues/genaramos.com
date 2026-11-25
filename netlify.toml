@@ -1,0 +1,7 @@
+# Netlify builds the site with the Ruby in .ruby-version and the gems in Gemfile.lock.
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"

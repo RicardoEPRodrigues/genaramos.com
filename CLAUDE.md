@@ -12,7 +12,7 @@ Website for Gena Ramos, a professional hairdresser (cinema, TV, theatre, private
 ## Constraints
 
 - Built by **GitHub Pages**, so only whitelisted plugins work and Jekyll is pinned to 3.9 by the `github-pages` gem. Don't add plugins or Jekyll 4 features.
-- `Gemfile.lock` and `_site/` are gitignored.
+- `Gemfile.lock` is committed so Netlify installs the same gems as local builds; `_site/` is gitignored. Keep Ruby at 2.7.6 (`.ruby-version`) and `ffi` below 1.17 (1.17+ needs Ruby 3). `netlify.toml` sets the build command and publish folder.
 - `_config.yml` changes need a server restart.
 - GitHub Pages compiles Sass with Ruby Sass, so avoid CSS `min()`/`max()`.
 
