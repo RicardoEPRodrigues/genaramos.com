@@ -63,6 +63,17 @@
                 });
             }
 
+            /* Looping videos: a pause/play button, and no autoplay when the visitor prefers reduced motion. */
+            document.querySelectorAll("[data-video-toggle]").forEach(function (btn) {
+                var video = btn.parentElement.querySelector("video");
+                function show() { btn.setAttribute("aria-pressed", String(video.paused)); }
+                if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { video.removeAttribute("autoplay"); video.pause(); }
+                btn.addEventListener("click", function () { if (video.paused) { video.play(); } else { video.pause(); } });
+                video.addEventListener("play", show);
+                video.addEventListener("pause", show);
+                show();
+            });
+
             /* Portfolio filter tabs. Without JavaScript the tabs stay hidden and everything shows. */
             var tabs = document.querySelectorAll("[data-filter]");
             if (tabs.length) {

@@ -7,8 +7,11 @@ kicker: Em parceria com a Pampas Company
 headline: Apoio e soluções para o seu
 headline_accent: bem-estar.
 lead: Em parceria com a Pampas Company, ofereço um espaço de apoio, cuidado e soluções capilares personalizadas, com privacidade, sensibilidade e profissionalismo.
-image: /assets/uploads/apoio-wig.jpg
-image_alt: Cabeleira de cabelo natural castanho e ondulado num suporte
+image: /assets/uploads/apoio-fitting.jpg
+image_alt: Gena Ramos a ajustar uma cabeleira a uma cliente no espaço da Pampas Company
+video: /assets/uploads/apoio-capilar.mp4
+video_poster: /assets/uploads/apoio-capilar-poster.jpg
+video_label: Gena Ramos a escolher, adaptar e pentear uma cabeleira para uma cliente no espaço da Pampas Company
 includes_kicker: Os serviços incluem
 includes_title: Um acompanhamento pensado para si.
 includes_text: Cada pessoa chega com uma história diferente. O primeiro passo é uma conversa, sem pressa e com toda a discrição.

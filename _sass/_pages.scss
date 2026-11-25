@@ -119,6 +119,20 @@
 .support-hero { padding-top: 56px; }
 .support-hero .page-head__title { font-size: 80px; @media #{$tablet} { font-size: 60px; } @media #{$phone} { font-size: 44px; } }
 .support-hero__figure { position: relative; }
+.support-hero__figure--video { width: 420px; justify-self: end; @media #{$tablet} { justify-self: start; width: 100%; max-width: 420px; } }
+.support-hero__video { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; background: var(--surface); }
+.support-hero__figure--video .support-hero__badge { top: 40px; bottom: auto; }
+.video-toggle {
+  position: absolute; right: 16px; bottom: 16px;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%;
+  background: rgba(20, 20, 20, 0.6); color: #FFFFFF; cursor: pointer;
+  &:hover { background: rgba(20, 20, 20, 0.85); }
+  .icon { width: 18px; height: 18px; }
+}
+.video-toggle__play { display: none; }
+.video-toggle[aria-pressed="true"] .video-toggle__pause { display: none; }
+.video-toggle[aria-pressed="true"] .video-toggle__play { display: inline-flex; }
 .support-hero__badge {
   position: absolute; left: -56px; bottom: 32px; width: 300px;
   display: flex; flex-direction: column; gap: 4px; padding: 20px 24px;

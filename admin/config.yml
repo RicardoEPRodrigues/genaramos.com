@@ -146,6 +146,9 @@ collections:
           - { label: 'Texto', name: 'body', widget: 'markdown', required: false }
           - { label: 'Fotografia', name: 'image', widget: 'image', required: false }
           - { label: 'Descrição da fotografia', name: 'image_alt', widget: 'string', required: false }
+          - { label: 'Vídeo (MP4, sem som)', name: 'video', widget: 'file', required: false, hint: 'Se existir, aparece no lugar da fotografia, em repetição e sem som. Formato vertical (9:16).' }
+          - { label: 'Imagem do vídeo (antes de carregar)', name: 'video_poster', widget: 'image', required: false }
+          - { label: 'Descrição do vídeo', name: 'video_label', widget: 'string', required: false, hint: 'Para leitores de ecrã.' }
           - { label: 'Serviços: destaque', name: 'includes_kicker', widget: 'string', required: false }
           - { label: 'Serviços: título', name: 'includes_title', widget: 'string', required: false }
           - { label: 'Serviços: texto', name: 'includes_text', widget: 'text', required: false }

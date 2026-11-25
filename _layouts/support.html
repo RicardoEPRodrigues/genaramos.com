@@ -17,9 +17,18 @@ layout: default
             <a class="btn btn--ghost" href="#onde">Onde estamos{% include icon.html name="map-pin" %}</a>
         </div>
     </div>
-    {% if page.image %}
-        <figure class="support-hero__figure">
-            <img class="about-hero__photo" src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">
+    {% if page.video or page.image %}
+        <figure class="support-hero__figure{% if page.video %} support-hero__figure--video{% endif %}">
+            {% if page.video %}
+                {%- comment -%} Muted, looping, no sound track. Paused for reduced motion; the button pauses it (script in default.html). {%- endcomment -%}
+                <video class="support-hero__video" src="{{ page.video | relative_url }}"{% if page.video_poster %} poster="{{ page.video_poster | relative_url }}"{% endif %} autoplay muted loop playsinline preload="metadata" aria-label="{{ page.video_label }}"></video>
+                <button class="video-toggle" type="button" aria-pressed="false" data-video-toggle>
+                    <span class="video-toggle__pause">{% include icon.html name="pause" %}<span class="visually-hidden">Pausar vídeo</span></span>
+                    <span class="video-toggle__play">{% include icon.html name="play" %}<span class="visually-hidden">Reproduzir vídeo</span></span>
+                </button>
+            {% else %}
+                <img class="about-hero__photo" src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">
+            {% endif %}
             {% if pt %}<figcaption class="support-hero__badge"><span class="kicker">{{ pt.name }}</span>{{ pt.address }}</figcaption>{% endif %}
         </figure>
     {% endif %}
