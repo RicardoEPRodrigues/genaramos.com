@@ -2,7 +2,7 @@ backend:
   name: github
   repo: RicardoEPRodrigues/genaramos.com
   branch: main
-  site_domain: genaramos.netlify.app
+  site_domain: genaramos.com
 
 publish_mode: editorial_workflow
 locale: 'pt'
