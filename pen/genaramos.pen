@@ -12509,7 +12509,6 @@
       "x": 2300,
       "y": -2643,
       "name": "Site Nav",
-      "theme": {},
       "reusable": true,
       "width": 1440,
       "fill": "$bg",
@@ -12675,7 +12674,6 @@
       "x": 2300,
       "y": -2400,
       "name": "Site Footer",
-      "theme": {},
       "reusable": true,
       "width": 1440,
       "fill": "$bg",
@@ -22089,6 +22087,2601 @@
       "theme": {
         "mode": "light"
       }
+    },
+    {
+      "type": "frame",
+      "id": "E55XP",
+      "x": 0,
+      "y": 12400,
+      "name": "Instagram",
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 72,
+      "padding": 120,
+      "children": [
+        {
+          "type": "frame",
+          "id": "VB1T1",
+          "name": "Header",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "f1Nys",
+              "name": "Title",
+              "fill": "#141414",
+              "content": "Instagram — modelos",
+              "fontFamily": "Playfair Display",
+              "fontSize": 88,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "jmHrk",
+              "name": "Text",
+              "fill": "#4D4D4D",
+              "textGrowth": "fixed-width",
+              "width": 1100,
+              "content": "Cada modelo é um componente escuro com uma instância (claro) por baixo: edite o escuro e ambos acompanham. Para uma publicação nova, duplique a instância do tema que quiser, troque a fotografia (fill da imagem) e os textos. O componente IG Signature (monograma + site) segue o tema sozinho. Exportar em PNG a 1x.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-body",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JTZ43",
+          "name": "IG Signature",
+          "reusable": true,
+          "gap": 20,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "TNBRW",
+              "name": "Monogram",
+              "width": 76,
+              "height": 50,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "alkEu",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Logo",
+                  "enabled": "$logo-on-dark",
+                  "width": 76,
+                  "height": 50,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "images/monogram-gold-white.png",
+                    "mode": "contain"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "fQvl4",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Logo Light",
+                  "enabled": "$logo-on-light",
+                  "width": 76,
+                  "height": 50,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "images/monogram-gold-black.png",
+                    "mode": "contain"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "g2Ri1b",
+              "name": "Handle",
+              "fill": "$text",
+              "content": "GENARAMOS.COM",
+              "fontFamily": "$font-caps",
+              "fontSize": 22,
+              "fontWeight": "600",
+              "letterSpacing": 3
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vk9LR",
+          "name": "Publicações · 1080 × 1350",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            48,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "AtVZa",
+              "name": "Title",
+              "fill": "#141414",
+              "content": "Publicações · 1080 × 1350",
+              "fontFamily": "Playfair Display",
+              "fontSize": 56,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "A8UtB",
+              "name": "Text",
+              "fill": "#4D4D4D",
+              "textGrowth": "fixed-width",
+              "width": 1100,
+              "content": "Formato 4:5, o que ocupa mais espaço no feed. Trabalho, citação, serviço, Apoio Capilar, anúncio e antes/depois.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-body",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ksqgw",
+          "name": "Posts · escuro",
+          "gap": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "tKEqd",
+              "name": "Post · Trabalho",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1350,
+              "fill": [
+                {
+                  "type": "image",
+                  "enabled": true,
+                  "url": "images/period-waves.jpg",
+                  "mode": "cover"
+                },
+                {
+                  "type": "gradient",
+                  "gradientType": "linear",
+                  "enabled": true,
+                  "rotation": 0,
+                  "size": {
+                    "height": 1
+                  },
+                  "colors": [
+                    {
+                      "color": "$bg",
+                      "position": 0
+                    },
+                    {
+                      "color": "$bg",
+                      "position": 0.12
+                    },
+                    {
+                      "color": "$bg-clear",
+                      "position": 0.62
+                    }
+                  ]
+                },
+                {
+                  "type": "gradient",
+                  "gradientType": "linear",
+                  "enabled": true,
+                  "opacity": 0.7,
+                  "rotation": 180,
+                  "size": {
+                    "height": 1
+                  },
+                  "colors": [
+                    {
+                      "color": "$bg",
+                      "position": 0
+                    },
+                    {
+                      "color": "$bg-clear",
+                      "position": 0.22
+                    }
+                  ]
+                }
+              ],
+              "layout": "vertical",
+              "padding": 80,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kzJHy",
+                  "name": "Top",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "V6UGAo",
+                      "type": "ref",
+                      "ref": "JTZ43",
+                      "name": "Signature"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i4Xrf9",
+                      "name": "Category",
+                      "fill": "$accent-fill",
+                      "padding": [
+                        12,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "W5ETR",
+                          "name": "Label",
+                          "fill": "$on-accent",
+                          "content": "CINEMA",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 22,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vpA8S",
+                  "name": "Credit",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vPqXn",
+                      "name": "Kicker",
+                      "fill": "$accent",
+                      "content": "TRABALHO SELECIONADO",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 24,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "C92Qk",
+                      "name": "Title",
+                      "fill": "$text",
+                      "content": "Variações",
+                      "lineHeight": 1.02,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 128,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c9YGC",
+                      "name": "Accent",
+                      "fill": "$accent",
+                      "content": "Prémio Sophia 2020.",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 56,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "wGRcs",
+                      "name": "Rule",
+                      "fill": "$rule-strong",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZPB94",
+                      "name": "Meta",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "L8Fev",
+                          "name": "Role",
+                          "fill": "$muted",
+                          "content": "CABELOS — GENA RAMOS",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 22,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "fVrvt",
+                          "name": "Year",
+                          "fill": "$muted",
+                          "content": "2019",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 22,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Z5uYc",
+              "name": "Post · Citação",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1350,
+              "fill": "$bg",
+              "layout": "vertical",
+              "padding": 96,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "id": "N0eoTp",
+                  "type": "ref",
+                  "ref": "JTZ43",
+                  "name": "Signature"
+                },
+                {
+                  "type": "frame",
+                  "id": "m02Rf",
+                  "name": "Quote",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LHXq4",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "“",
+                      "lineHeight": 0.9,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 240,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SqZQu",
+                      "name": "Line",
+                      "fill": "$text",
+                      "content": "Cada penteado\nconta uma",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 96,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EUfKg",
+                      "name": "Accent",
+                      "fill": "$accent",
+                      "content": "história.",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 96,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uRQcI",
+                  "name": "Footer",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 28,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "FP17Q",
+                      "name": "Rule",
+                      "fill": "$rule-strong",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "afS8e",
+                      "name": "Attribution",
+                      "fill": "$muted",
+                      "content": "GENA RAMOS — CABELEIREIRA PROFISSIONAL",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 22,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "K45XWp",
+              "name": "Post · Serviço",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1350,
+              "fill": "$bg",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wzo7H",
+                  "name": "Photo",
+                  "width": "fill_container",
+                  "height": 700,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "images/bridal-updo.jpg",
+                    "mode": "cover"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "w0WOv",
+                  "name": "Content",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "padding": [
+                    64,
+                    80,
+                    80,
+                    80
+                  ],
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "khylL",
+                      "name": "Heading",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "x9hX7p",
+                          "name": "Kicker",
+                          "fill": "$accent",
+                          "content": "CASAMENTOS",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 24,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "Jej6x",
+                          "name": "Line",
+                          "fill": "$text",
+                          "content": "O seu dia,",
+                          "lineHeight": 1.08,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 84,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JCJDI",
+                          "name": "Accent",
+                          "fill": "$accent",
+                          "content": "o seu penteado.",
+                          "lineHeight": 1.08,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 84,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qqOuL",
+                      "name": "CTA",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "KUvY1",
+                          "name": "Button",
+                          "fill": "$accent-fill",
+                          "gap": 14,
+                          "padding": [
+                            22,
+                            34
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "u8NVl",
+                              "name": "Label",
+                              "fill": "$on-accent",
+                              "content": "PEDIR MARCAÇÃO",
+                              "fontFamily": "$font-caps",
+                              "fontSize": 24,
+                              "fontWeight": "600",
+                              "letterSpacing": 2.5
+                            },
+                            {
+                              "type": "icon",
+                              "id": "fjKvZ",
+                              "name": "Arrow",
+                              "width": 24,
+                              "height": 24,
+                              "icon": "arrow-right",
+                              "library": "lucide",
+                              "fill": "$on-accent"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "obMoA",
+                          "name": "Phone",
+                          "fill": "$text",
+                          "content": "+351 966 008 332",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fIYph",
+              "name": "Post · Apoio Capilar",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1350,
+              "fill": "$surface",
+              "layout": "vertical",
+              "padding": 80,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "u72Lz",
+                  "name": "Heading",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H3mkzJ",
+                      "name": "Kicker",
+                      "fill": "$accent",
+                      "content": "APOIO CAPILAR · COM A PAMPAS COMPANY",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 22,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "Sm83n",
+                      "name": "Line",
+                      "fill": "$text",
+                      "content": "Apoio e soluções\npara o seu",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 76,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EcwtA",
+                      "name": "Accent",
+                      "fill": "$accent",
+                      "content": "bem-estar.",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 76,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N56sN",
+                  "name": "Middle",
+                  "width": "fill_container",
+                  "gap": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "E1DZB",
+                      "name": "Photo",
+                      "width": 396,
+                      "height": 468,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "images/apoio-fitting.jpg",
+                        "mode": "cover"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "j6cbxL",
+                      "name": "Details",
+                      "width": "fill_container",
+                      "height": 468,
+                      "layout": "vertical",
+                      "gap": 36,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BEylF",
+                          "name": "Text",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Com privacidade e sensibilidade, para recuperar a confiança e sentir-se bem consigo.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-body",
+                          "fontSize": 30,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "asvJh",
+                          "name": "Points",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 18,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "B58y8",
+                              "name": "Alopecia e queda de cabelo",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "pALGH",
+                                  "name": "Icon",
+                                  "width": 28,
+                                  "height": 28,
+                                  "icon": "heart",
+                                  "library": "lucide",
+                                  "fill": "$accent"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "v7pnu",
+                                  "name": "Label",
+                                  "fill": "$text",
+                                  "content": "Alopecia e queda de cabelo",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 26,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "X9Osrb",
+                              "name": "Cabeleiras e próteses",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "g1mN2",
+                                  "name": "Icon",
+                                  "width": 28,
+                                  "height": 28,
+                                  "icon": "user-round",
+                                  "library": "lucide",
+                                  "fill": "$accent"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "fDvHV",
+                                  "name": "Label",
+                                  "fill": "$text",
+                                  "content": "Cabeleiras e próteses",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 26,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "XNU1L",
+                              "name": "Acompanhamento discreto",
+                              "gap": 16,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "NbR2h",
+                                  "name": "Icon",
+                                  "width": 28,
+                                  "height": 28,
+                                  "icon": "handshake",
+                                  "library": "lucide",
+                                  "fill": "$accent"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "XQMLp",
+                                  "name": "Label",
+                                  "fill": "$text",
+                                  "content": "Acompanhamento discreto",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 26,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "O68HDl",
+                  "name": "Footer",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "zUoMp",
+                      "type": "ref",
+                      "ref": "JTZ43",
+                      "name": "Signature"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PBYO7",
+                      "name": "Place",
+                      "fill": "$muted",
+                      "content": "TORRES VEDRAS",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 22,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bUxWh",
+              "name": "Post · Anúncio",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1350,
+              "fill": "$accent-fill",
+              "layout": "vertical",
+              "padding": 96,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WFYY4",
+                  "name": "Top",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "R94gw",
+                      "name": "Name",
+                      "fill": "$on-accent",
+                      "content": "GENA RAMOS",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 26,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "jPl3x",
+                      "name": "Kicker",
+                      "fill": "$on-accent",
+                      "content": "MARCAÇÕES ABERTAS",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 22,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Bomen",
+                  "name": "Heading",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H00rv",
+                      "name": "Headline",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EOI9E",
+                          "name": "Line",
+                          "fill": "$on-accent",
+                          "content": "Casamentos",
+                          "lineHeight": 1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 150,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "j9OrA",
+                          "name": "Accent",
+                          "fill": "$on-accent",
+                          "content": "2027.",
+                          "lineHeight": 1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 150,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZmSBz",
+                      "name": "Text",
+                      "fill": "$on-accent",
+                      "textGrowth": "fixed-width",
+                      "width": 760,
+                      "content": "Penteados de noiva pensados ao pormenor, para que o cabelo dure o dia inteiro.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font-body",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KZM5W",
+                  "name": "Footer",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 28,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "kEJAa",
+                      "name": "Rule",
+                      "fill": "$on-accent",
+                      "width": "fill_container",
+                      "height": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E3UJA",
+                      "name": "Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O0kjzT",
+                          "name": "Phone",
+                          "fill": "$on-accent",
+                          "content": "+351 966 008 332",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 24,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "S8urx",
+                          "name": "Site",
+                          "fill": "$on-accent",
+                          "content": "GENARAMOS.COM",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 24,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PEWLS",
+              "name": "Post · Antes e Depois",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1350,
+              "fill": "$bg",
+              "layout": "vertical",
+              "gap": 40,
+              "padding": 64,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lKDpa",
+                  "name": "Top",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "zU1N5",
+                      "type": "ref",
+                      "ref": "JTZ43",
+                      "name": "Signature"
+                    },
+                    {
+                      "type": "text",
+                      "id": "efVnr",
+                      "name": "Kicker",
+                      "fill": "$accent",
+                      "content": "TRANSFORMAÇÃO",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 22,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rBzlh",
+                  "name": "Photos",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WeeOq",
+                      "name": "ANTES",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "images/waves.jpg",
+                        "mode": "cover"
+                      },
+                      "layout": "vertical",
+                      "padding": 24,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hKUFo",
+                          "name": "Chip",
+                          "fill": "$bg",
+                          "padding": [
+                            10,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PcQ8d",
+                              "name": "Label",
+                              "fill": "$text",
+                              "content": "ANTES",
+                              "fontFamily": "$font-caps",
+                              "fontSize": 22,
+                              "fontWeight": "600",
+                              "letterSpacing": 3
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vA93r",
+                      "name": "DEPOIS",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "images/period-waves.jpg",
+                        "mode": "cover"
+                      },
+                      "layout": "vertical",
+                      "padding": 24,
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yFQXJ",
+                          "name": "Chip",
+                          "fill": "$accent-fill",
+                          "padding": [
+                            10,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xGIbf",
+                              "name": "Label",
+                              "fill": "$on-accent",
+                              "content": "DEPOIS",
+                              "fontFamily": "$font-caps",
+                              "fontSize": 22,
+                              "fontWeight": "600",
+                              "letterSpacing": 3
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "llUws",
+                  "name": "Caption",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "f6pSHm",
+                      "name": "Line",
+                      "fill": "$text",
+                      "content": "Ondas de época,",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 56,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tkLqx",
+                      "name": "Accent",
+                      "fill": "$accent",
+                      "content": "para uma gala.",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 56,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YQTmd",
+          "name": "Posts · claro",
+          "gap": 80,
+          "children": [
+            {
+              "id": "LeJ12",
+              "type": "ref",
+              "ref": "tKEqd",
+              "name": "Post · Trabalho (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "BbOE2",
+              "type": "ref",
+              "ref": "Z5uYc",
+              "name": "Post · Citação (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "Fu62T",
+              "type": "ref",
+              "ref": "K45XWp",
+              "name": "Post · Serviço (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "X3V3q",
+              "type": "ref",
+              "ref": "fIYph",
+              "name": "Post · Apoio Capilar (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "Nm6ZH",
+              "type": "ref",
+              "ref": "bUxWh",
+              "name": "Post · Anúncio (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "GIbTD",
+              "type": "ref",
+              "ref": "PEWLS",
+              "name": "Post · Antes e Depois (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "th4iF",
+          "name": "Stories · 1080 × 1920",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            48,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "dcgLE",
+              "name": "Title",
+              "fill": "#141414",
+              "content": "Stories · 1080 × 1920",
+              "fontFamily": "Playfair Display",
+              "fontSize": 56,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ymBtU",
+              "name": "Text",
+              "fill": "#4D4D4D",
+              "textGrowth": "fixed-width",
+              "width": 1100,
+              "content": "Margens de 250 px em cima e 340 px em baixo, livres para a interface do Instagram. A área tracejada da story de link é para o sticker.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-body",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r2nLXY",
+          "name": "Stories · escuro",
+          "gap": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "O2osaQ",
+              "name": "Story · Trabalho",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1920,
+              "fill": [
+                {
+                  "type": "image",
+                  "enabled": true,
+                  "url": "images/gena-backstage.jpg",
+                  "mode": "cover"
+                },
+                {
+                  "type": "gradient",
+                  "gradientType": "linear",
+                  "enabled": true,
+                  "rotation": 0,
+                  "size": {
+                    "height": 1
+                  },
+                  "colors": [
+                    {
+                      "color": "$bg",
+                      "position": 0
+                    },
+                    {
+                      "color": "$bg",
+                      "position": 0.18
+                    },
+                    {
+                      "color": "$bg-clear",
+                      "position": 0.55
+                    }
+                  ]
+                },
+                {
+                  "type": "gradient",
+                  "gradientType": "linear",
+                  "enabled": true,
+                  "opacity": 0.7,
+                  "rotation": 180,
+                  "size": {
+                    "height": 1
+                  },
+                  "colors": [
+                    {
+                      "color": "$bg",
+                      "position": 0
+                    },
+                    {
+                      "color": "$bg-clear",
+                      "position": 0.25
+                    }
+                  ]
+                }
+              ],
+              "layout": "vertical",
+              "padding": [
+                250,
+                80,
+                340,
+                80
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XRK5o",
+                  "name": "Top",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "eLlhb",
+                      "type": "ref",
+                      "ref": "JTZ43",
+                      "name": "Signature"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lm5UP",
+                      "name": "Category",
+                      "fill": "$accent-fill",
+                      "padding": [
+                        12,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C9LtZ",
+                          "name": "Label",
+                          "fill": "$on-accent",
+                          "content": "BASTIDORES",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 24,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EXiCx",
+                  "name": "Credit",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Oi79J",
+                      "name": "Kicker",
+                      "fill": "$accent",
+                      "content": "EM RODAGEM",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 28,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "YfVZd",
+                      "name": "Title",
+                      "fill": "$text",
+                      "content": "A Travessia",
+                      "lineHeight": 1.02,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 136,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "neJti",
+                      "name": "Rule",
+                      "fill": "$rule-strong",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tJ81L",
+                      "name": "Meta",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MT5xR",
+                          "name": "Role",
+                          "fill": "$muted",
+                          "content": "TELEVISÃO — CABELOS",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "fq1ul",
+                          "name": "Year",
+                          "fill": "$muted",
+                          "content": "2023",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SFghg",
+              "name": "Story · Link",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1920,
+              "fill": "$bg",
+              "layout": "vertical",
+              "padding": [
+                250,
+                80,
+                340,
+                80
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "id": "EXRfp",
+                  "type": "ref",
+                  "ref": "JTZ43",
+                  "name": "Signature"
+                },
+                {
+                  "type": "frame",
+                  "id": "QmB5o",
+                  "name": "Middle",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 64,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "u6V9i",
+                      "name": "Photo",
+                      "width": "fill_container",
+                      "height": 560,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "images/wig.jpg",
+                        "mode": "cover"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "t3VCRD",
+                      "name": "Heading",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LSeUA",
+                          "name": "Kicker",
+                          "fill": "$accent",
+                          "content": "NOVO NO SITE",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 28,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "vzacV",
+                          "name": "Line",
+                          "fill": "$text",
+                          "content": "Portfólio",
+                          "lineHeight": 1.08,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 120,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JWqeq",
+                          "name": "Accent",
+                          "fill": "$accent",
+                          "content": "atualizado.",
+                          "lineHeight": 1.08,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 120,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qPCdN",
+                          "name": "Text",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Cinema, televisão e teatro: os trabalhos mais recentes, ano a ano.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-body",
+                          "fontSize": 34,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IJ0a2",
+                  "name": "Link Sticker Area",
+                  "width": "fill_container",
+                  "height": 150,
+                  "stroke": "$rule-strong",
+                  "strokeWidth": 2,
+                  "strokeDash": [
+                    12,
+                    10
+                  ],
+                  "gap": 16,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ZX7Ag",
+                      "name": "Icon",
+                      "width": 32,
+                      "height": 32,
+                      "icon": "link",
+                      "library": "lucide",
+                      "fill": "$subtle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uHxI1",
+                      "name": "Hint",
+                      "fill": "$subtle",
+                      "content": "COLOCAR AQUI O STICKER DE LINK",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 24,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PARFn",
+              "name": "Story · Apoio Capilar",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1920,
+              "fill": "$surface",
+              "layout": "vertical",
+              "padding": [
+                250,
+                80,
+                340,
+                80
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gNeBW",
+                  "name": "Photo",
+                  "width": "fill_container",
+                  "height": 620,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "images/apoio-fitting.jpg",
+                    "mode": "cover"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "vtlC6",
+                  "name": "Heading",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NTZQA",
+                      "name": "Kicker",
+                      "fill": "$accent",
+                      "content": "APOIO CAPILAR",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 28,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "rmgYQ",
+                      "name": "Line",
+                      "fill": "$text",
+                      "content": "Sentir-se bem",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 104,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E9Y5hA",
+                      "name": "Accent",
+                      "fill": "$accent",
+                      "content": "consigo.",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 104,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gRwzW",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Cabeleiras e soluções capilares, com privacidade e sensibilidade, em parceria com a Pampas Company.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 34,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mJ6ow",
+                  "name": "Contact",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Fj8PE",
+                      "name": "Rule",
+                      "fill": "$rule-strong",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X1XYul",
+                      "name": "MERCADO MUNICIPAL DE TORRES VEDRAS · PISO 1",
+                      "gap": 18,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "Vjy63",
+                          "name": "Icon",
+                          "width": 30,
+                          "height": 30,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IjysW",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "MERCADO MUNICIPAL DE TORRES VEDRAS · PISO 1",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ls4mM",
+                      "name": "918 730 343",
+                      "gap": 18,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "H72LM",
+                          "name": "Icon",
+                          "width": 30,
+                          "height": 30,
+                          "icon": "phone",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "i7drhh",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "918 730 343",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VKbCl",
+              "name": "Story · Agenda",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1920,
+              "fill": "$bg",
+              "layout": "vertical",
+              "padding": [
+                250,
+                80,
+                340,
+                80
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "id": "T7jOPu",
+                  "type": "ref",
+                  "ref": "JTZ43",
+                  "name": "Signature"
+                },
+                {
+                  "type": "frame",
+                  "id": "evGym",
+                  "name": "Heading",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "x5vqQ",
+                      "name": "Kicker",
+                      "fill": "$accent",
+                      "content": "AGENDA",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 28,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "zb0Xa",
+                      "name": "Line",
+                      "fill": "$text",
+                      "content": "Datas livres",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 112,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "g0KSd",
+                      "name": "Accent",
+                      "fill": "$accent",
+                      "content": "em dezembro.",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 112,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "WJR6H",
+                  "name": "Dates",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "crhXJ",
+                      "name": "Date 06",
+                      "width": "fill_container",
+                      "stroke": "$rule",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 36,
+                      "padding": [
+                        28,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pl9YI",
+                          "name": "Day",
+                          "fill": "$accent",
+                          "content": "06",
+                          "lineHeight": 1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 72,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Pl7Vw",
+                          "name": "Weekday",
+                          "fill": "$muted",
+                          "content": "SÁB",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "qvWdU",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "Casamentos e eventos",
+                          "fontFamily": "$font-body",
+                          "fontSize": 34,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "s71ga0",
+                      "name": "Date 13",
+                      "width": "fill_container",
+                      "stroke": "$rule",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 36,
+                      "padding": [
+                        28,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qGTgv",
+                          "name": "Day",
+                          "fill": "$accent",
+                          "content": "13",
+                          "lineHeight": 1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 72,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MLJIO",
+                          "name": "Weekday",
+                          "fill": "$muted",
+                          "content": "SÁB",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "mNuwl",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "Casamentos e eventos",
+                          "fontFamily": "$font-body",
+                          "fontSize": 34,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JZYWB",
+                      "name": "Date 18",
+                      "width": "fill_container",
+                      "stroke": "$rule",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 36,
+                      "padding": [
+                        28,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DyFub",
+                          "name": "Day",
+                          "fill": "$accent",
+                          "content": "18",
+                          "lineHeight": 1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 72,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tczYU",
+                          "name": "Weekday",
+                          "fill": "$muted",
+                          "content": "QUI",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZvW97",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "Cabelos · marcação",
+                          "fontFamily": "$font-body",
+                          "fontSize": 34,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OR973",
+                      "name": "Date 20",
+                      "width": "fill_container",
+                      "stroke": "$rule",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "gap": 36,
+                      "padding": [
+                        28,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "X7HiqZ",
+                          "name": "Day",
+                          "fill": "$accent",
+                          "content": "20",
+                          "lineHeight": 1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 72,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "x8XGlj",
+                          "name": "Weekday",
+                          "fill": "$muted",
+                          "content": "SÁB",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 26,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "n9xQiK",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "Casamentos e eventos",
+                          "fontFamily": "$font-body",
+                          "fontSize": 34,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Agmwe",
+                  "name": "CTA",
+                  "width": "fill_container",
+                  "fill": "$accent-fill",
+                  "padding": [
+                    28,
+                    36
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "I9vpO",
+                      "name": "Label",
+                      "fill": "$on-accent",
+                      "content": "RESPONDA A ESTA STORY",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 26,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "cQYXt",
+                      "name": "Phone",
+                      "fill": "$on-accent",
+                      "content": "+351 966 008 332",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 26,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hiFxG",
+          "name": "Stories · claro",
+          "gap": 80,
+          "children": [
+            {
+              "id": "YdNef",
+              "type": "ref",
+              "ref": "O2osaQ",
+              "name": "Story · Trabalho (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "AiQUB",
+              "type": "ref",
+              "ref": "SFghg",
+              "name": "Story · Link (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "DejtL",
+              "type": "ref",
+              "ref": "PARFn",
+              "name": "Story · Apoio Capilar (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "WHbml",
+              "type": "ref",
+              "ref": "VKbCl",
+              "name": "Story · Agenda (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m2v3tQ",
+          "name": "Capas de Reels · 1080 × 1920",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            48,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "FeGY0",
+              "name": "Title",
+              "fill": "#141414",
+              "content": "Capas de Reels · 1080 × 1920",
+              "fontFamily": "Playfair Display",
+              "fontSize": 56,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "roY7X",
+              "name": "Text",
+              "fill": "#4D4D4D",
+              "textGrowth": "fixed-width",
+              "width": 1100,
+              "content": "O título fica dentro do corte 3:4 central, que é o que a grelha do perfil mostra. Ver o guia de zonas seguras.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font-body",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iPzwz",
+          "name": "Reels · escuro",
+          "gap": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "DyzJp",
+              "name": "Reel · Capa",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1920,
+              "fill": [
+                {
+                  "type": "image",
+                  "enabled": true,
+                  "url": "images/gena-at-work.jpg",
+                  "mode": "cover"
+                },
+                {
+                  "type": "gradient",
+                  "gradientType": "linear",
+                  "enabled": true,
+                  "rotation": 0,
+                  "size": {
+                    "height": 1
+                  },
+                  "colors": [
+                    {
+                      "color": "$bg",
+                      "position": 0
+                    },
+                    {
+                      "color": "$bg",
+                      "position": 0.2
+                    },
+                    {
+                      "color": "$bg-clear",
+                      "position": 0.55
+                    }
+                  ]
+                },
+                {
+                  "type": "gradient",
+                  "gradientType": "linear",
+                  "enabled": true,
+                  "opacity": 0.6,
+                  "rotation": 180,
+                  "size": {
+                    "height": 1
+                  },
+                  "colors": [
+                    {
+                      "color": "$bg",
+                      "position": 0
+                    },
+                    {
+                      "color": "$bg-clear",
+                      "position": 0.3
+                    }
+                  ]
+                }
+              ],
+              "layout": "vertical",
+              "padding": [
+                280,
+                80
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "id": "YWW9G",
+                  "type": "ref",
+                  "ref": "JTZ43",
+                  "name": "Signature"
+                },
+                {
+                  "type": "frame",
+                  "id": "l6Nr5",
+                  "name": "Title Block",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YbLE3",
+                      "name": "Kicker",
+                      "fill": "$accent",
+                      "content": "BASTIDORES",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 30,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "Dnv10",
+                      "name": "Line",
+                      "fill": "$text",
+                      "content": "Um dia de",
+                      "lineHeight": 1.02,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 140,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KJZcA",
+                      "name": "Accent",
+                      "fill": "$accent",
+                      "content": "rodagem.",
+                      "lineHeight": 1.02,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 140,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kEaKe",
+              "name": "Reel · Capa Série",
+              "theme": {
+                "mode": "dark"
+              },
+              "reusable": true,
+              "clip": true,
+              "width": 1080,
+              "height": 1920,
+              "fill": "$bg",
+              "layout": "vertical",
+              "padding": [
+                280,
+                80
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "p1jN8E",
+                  "name": "Top",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "JKJ4K",
+                      "type": "ref",
+                      "ref": "JTZ43",
+                      "name": "Signature"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x76po",
+                      "name": "Series",
+                      "fill": "$muted",
+                      "content": "SÉRIE · PENTEADOS DE ÉPOCA",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 24,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HtjJB",
+                  "name": "Title Block",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J7xkZE",
+                      "name": "Number",
+                      "fill": "$accent",
+                      "content": "01",
+                      "lineHeight": 0.9,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 360,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "XRJYI",
+                      "name": "Rule",
+                      "fill": "$rule-strong",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "T86in",
+                      "name": "Line",
+                      "fill": "$text",
+                      "content": "Ondas dos\nanos 30",
+                      "lineHeight": 1.02,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 130,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K0oKy",
+                      "name": "Meta",
+                      "fill": "$muted",
+                      "content": "PASSO A PASSO · 60 SEGUNDOS",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 28,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F8vwl",
+              "name": "Guia · Zonas seguras",
+              "clip": true,
+              "width": 1080,
+              "height": 1920,
+              "fill": "#F3F3F3",
+              "stroke": "#D1D1D1",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WJEol",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Topo",
+                  "width": 1080,
+                  "height": 250,
+                  "fill": "#E9B8B8",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "D9cln",
+                      "name": "Label",
+                      "fill": "#6D1F1F",
+                      "content": "STORY: PERFIL E BARRA DE PROGRESSO",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 26,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "xQ6ve",
+                      "name": "Size",
+                      "fill": "#6D1F1F",
+                      "content": "250 PX",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 22,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Kze4Q",
+                  "x": 0,
+                  "y": 1580,
+                  "name": "Base",
+                  "width": 1080,
+                  "height": 340,
+                  "fill": "#E9B8B8",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g7GRXX",
+                      "name": "Label",
+                      "fill": "#6D1F1F",
+                      "content": "STORY: RESPOSTA E PARTILHA · REEL: LEGENDA",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 26,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "tmNI9",
+                      "name": "Size",
+                      "fill": "#6D1F1F",
+                      "content": "340 PX",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 22,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kgOs6",
+                  "x": 0,
+                  "y": 240,
+                  "name": "Corte da grelha 3:4",
+                  "width": 1080,
+                  "height": 1440,
+                  "stroke": "#1F44A0",
+                  "strokeWidth": 4,
+                  "strokeDash": [
+                    20,
+                    14
+                  ],
+                  "layout": "vertical",
+                  "padding": 32,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yLSue",
+                      "name": "Label",
+                      "fill": "#1F44A0",
+                      "content": "CAPA DE REEL: CORTE NA GRELHA (3:4)",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 24,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KE9Rw",
+                  "x": 900,
+                  "y": 900,
+                  "name": "Lateral reels",
+                  "width": 180,
+                  "height": 680,
+                  "fill": "#E9B8B866",
+                  "layout": "vertical",
+                  "padding": 16,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "P7xuV",
+                      "name": "Label",
+                      "fill": "#6D1F1F",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "REEL: BOTÕES",
+                      "textAlign": "center",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 22,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i3uWiM",
+                  "x": 80,
+                  "y": 560,
+                  "name": "Notas",
+                  "width": 760,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "G0x9T",
+                      "name": "Title",
+                      "fill": "#141414",
+                      "content": "Zonas seguras",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 72,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KzKQS",
+                      "name": "Text",
+                      "fill": "#4D4D4D",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Stories e reels: 1080 × 1920. Manter texto e logótipo fora das faixas vermelhas, onde o Instagram mostra o perfil, a legenda e os botões.\n\nCapas de reel: a grelha do perfil mostra só o corte 3:4 ao centro (linha azul). O título tem de caber aí.\n\nPublicações: 1080 × 1350 (4:5), sem zonas ocultas; a grelha corta 3:4 ao centro.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 30,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tLx3R",
+          "name": "Reels · claro",
+          "gap": 80,
+          "children": [
+            {
+              "id": "v6D9m1",
+              "type": "ref",
+              "ref": "DyzJp",
+              "name": "Reel · Capa (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            },
+            {
+              "id": "P3xWwE",
+              "type": "ref",
+              "ref": "kEaKe",
+              "name": "Reel · Capa Série (claro)",
+              "theme": {
+                "mode": "light"
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "themes": {
