@@ -126,7 +126,66 @@ collections:
           - { label: 'Destaque', name: 'kicker', widget: 'string', required: false }
           - { label: 'Título', name: 'headline', widget: 'string' }
           - { label: 'Introdução', name: 'intro', widget: 'text', required: false, hint: 'A lista de serviços edita-se em "Conteúdos › Serviços".' }
+          - { label: 'Apoio capilar: título do destaque', name: 'support_title', widget: 'string', required: false, hint: 'O resto do destaque edita-se em "Páginas › Apoio Capilar".' }
+          - { label: 'Apoio capilar: texto do destaque', name: 'support_text', widget: 'text', required: false }
           - { label: 'Citação', name: 'quote', widget: 'text', required: false }
+          - { label: 'Faixa de contacto: título', name: 'band_title', widget: 'string', required: false }
+          - { label: 'Faixa de contacto: texto', name: 'band_text', widget: 'string', required: false }
+      - label: 'Apoio Capilar'
+        name: 'support-page'
+        file: 'apoio-capilar.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Apoio Capilar' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'support' }
+          - { label: 'Permalink', name: 'permalink', widget: 'hidden', default: '/apoio-capilar/' }
+          - { label: 'Descrição (motores de busca)', name: 'description', widget: 'string', required: false }
+          - { label: 'Destaque', name: 'kicker', widget: 'string', required: false }
+          - { label: 'Título', name: 'headline', widget: 'string' }
+          - { label: 'Final do título (dourado, itálico)', name: 'headline_accent', widget: 'string', required: false }
+          - { label: 'Frase de abertura', name: 'lead', widget: 'text', required: false }
+          - { label: 'Texto', name: 'body', widget: 'markdown', required: false }
+          - { label: 'Fotografia', name: 'image', widget: 'image', required: false }
+          - { label: 'Descrição da fotografia', name: 'image_alt', widget: 'string', required: false }
+          - { label: 'Serviços: destaque', name: 'includes_kicker', widget: 'string', required: false }
+          - { label: 'Serviços: título', name: 'includes_title', widget: 'string', required: false }
+          - { label: 'Serviços: texto', name: 'includes_text', widget: 'text', required: false }
+          - label: 'Serviços incluídos'
+            name: 'includes'
+            widget: 'list'
+            required: false
+            summary: '{{fields.text}}'
+            fields:
+              - { label: 'Ícone', name: 'icon', widget: 'select', options: ['user-round', 'heart', 'sparkles', 'scissors', 'handshake', 'gem', 'stethoscope'] }
+              - { label: 'Texto', name: 'text', widget: 'string' }
+          - { label: 'Citação', name: 'quote', widget: 'string', required: false }
+          - { label: 'Texto da citação', name: 'quote_text', widget: 'text', required: false }
+          - { label: 'Profissionais de saúde: título', name: 'health_title', widget: 'string', required: false }
+          - { label: 'Profissionais de saúde: texto', name: 'health_text', widget: 'text', required: false }
+          - label: 'Parceiro'
+            name: 'partner'
+            widget: 'object'
+            fields:
+              - { label: 'Nome', name: 'name', widget: 'string' }
+              - { label: 'Morada', name: 'address', widget: 'string' }
+              - { label: 'Ligação para o mapa', name: 'map_url', widget: 'string', required: false }
+              - { label: 'Telefone (como aparece)', name: 'phone', widget: 'string', required: false }
+              - { label: 'Telefone (para ligar)', name: 'phone_link', widget: 'string', required: false, hint: 'Sem espaços. Ex.: +351918730343' }
+          - { label: 'Onde estamos: título', name: 'where_title', widget: 'string', required: false }
+          - { label: 'Onde estamos: texto', name: 'where_text', widget: 'string', required: false }
+          - label: 'Destaque nas páginas Início e Serviços'
+            name: 'teaser'
+            widget: 'object'
+            fields:
+              - { label: 'Título', name: 'title', widget: 'string' }
+              - { label: 'Texto', name: 'text', widget: 'text' }
+              - label: 'Pontos'
+                name: 'points'
+                widget: 'list'
+                required: false
+                summary: '{{fields.text}}'
+                fields:
+                  - { label: 'Ícone', name: 'icon', widget: 'select', options: ['heart', 'user-round', 'handshake', 'sparkles', 'scissors', 'gem'] }
+                  - { label: 'Texto', name: 'text', widget: 'string' }
           - { label: 'Faixa de contacto: título', name: 'band_title', widget: 'string', required: false }
           - { label: 'Faixa de contacto: texto', name: 'band_text', widget: 'string', required: false }
       - label: 'Portfólio'

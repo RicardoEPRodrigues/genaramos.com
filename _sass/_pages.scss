@@ -114,3 +114,45 @@
 .audiences__title { font-size: 28px; }
 
 .podcast { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px; padding-top: 96px; padding-bottom: 96px; .section__title { font-size: 44px; } }
+
+/* ---------- Apoio Capilar ---------- */
+.support-hero { padding-top: 56px; }
+.support-hero .page-head__title { font-size: 80px; @media #{$tablet} { font-size: 60px; } @media #{$phone} { font-size: 44px; } }
+.support-hero__figure { position: relative; }
+.support-hero__badge {
+  position: absolute; left: -56px; bottom: 32px; width: 300px;
+  display: flex; flex-direction: column; gap: 4px; padding: 20px 24px;
+  background: var(--surface); border: 1px solid var(--rule); font-size: 15px; line-height: 1.4;
+  .kicker { font-size: 13px; margin: 0; }
+  @media #{$tablet} { position: static; width: auto; margin-top: -1px; }
+}
+
+.two-col { display: grid; grid-template-columns: 420px 1fr; gap: 96px; align-items: start; @media #{$tablet} { grid-template-columns: 1fr; gap: 40px; } }
+.two-col__head .section__title { margin-bottom: 20px; }
+.two-col__text { color: var(--muted); }
+
+.icon-rows li { display: flex; align-items: center; gap: 28px; padding: 26px 0; border-bottom: 1px solid var(--rule); &:first-child { padding-top: 0; } }
+.icon-rows .contact-rows__icon { width: 56px; height: 56px; .icon { width: 24px; height: 24px; } }
+.icon-rows__text { font-family: $font-display; font-size: 26px; line-height: 1.25; @media #{$phone} { font-size: 20px; } }
+
+.statement { display: grid; grid-template-columns: 640px 1fr; gap: 96px; align-items: center; @media #{$tablet} { grid-template-columns: 1fr; gap: 28px; } }
+.statement__quote { font-family: $font-display; font-style: italic; font-size: 64px; line-height: 1.1; color: var(--accent); @media #{$phone} { font-size: 40px; } }
+.statement__text { font-size: 20px; }
+
+.health { padding-bottom: 120px; @media #{$phone} { padding-bottom: 72px; } }
+.health__card { display: flex; flex-wrap: wrap; align-items: center; gap: 32px 48px; padding: 56px 64px; border: 1px solid var(--accent); @media #{$phone} { padding: 32px 24px; } }
+.health__icon { display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; flex: none; border-radius: 50%; background: var(--accent-fill); color: var(--on-accent); .icon { width: 34px; height: 34px; } }
+.health__text { flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; p { color: var(--muted); } }
+.health__title { font-size: 34px; @media #{$phone} { font-size: 26px; } }
+
+/* Highlight on the home and services pages. */
+.support-teaser { background: var(--surface); padding: 100px 0; @media #{$phone} { padding: 64px 0; } }
+.support-teaser__row { display: grid; grid-template-columns: 440px 1fr; gap: 80px; align-items: center; @media #{$tablet} { grid-template-columns: 1fr; gap: 40px; } }
+.support-teaser--compact .support-teaser__row { grid-template-columns: 360px 1fr; @media #{$tablet} { grid-template-columns: 1fr; } }
+.support-teaser--compact .section__title { font-size: 44px; @media #{$phone} { font-size: 32px; } }
+.support-teaser__photo { width: 100%; aspect-ratio: 44 / 52; object-fit: cover; @media #{$tablet} { max-width: 440px; } }
+.support-teaser__text { display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
+.support-teaser__tag { @include caps(14px); display: flex; flex-wrap: wrap; align-items: center; gap: 12px; color: var(--accent); }
+.pill { @include caps(12px); padding: 6px 12px; background: var(--accent-fill); color: var(--on-accent); }
+.support-teaser__lead { color: var(--muted); font-size: 18px; }
+.support-teaser__points { display: flex; flex-wrap: wrap; gap: 12px 28px; li { display: flex; align-items: center; gap: 10px; font-size: 15px; } .icon { color: var(--accent); } }

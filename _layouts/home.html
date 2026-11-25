@@ -42,7 +42,9 @@ layout: default
 </section>
 {% endif %}
 
-<section class="section section--surface">
+{% include support-teaser.html %}
+
+<section class="section">
     <div class="shell">
         <div class="section__head">
             <div>
@@ -74,18 +76,20 @@ layout: default
     </div>
 </section>
 
-<section class="shell section">
-    <p class="kicker">Serviços</p>
-    <h2 class="section__title section__title--narrow">{{ page.services_title }}</h2>
-    <div class="cards">
-        {% for s in site.data.services.services %}
-            <a class="card" href="{{ '/servicos/' | relative_url }}#{{ s.title | slugify }}">
-                {% if s.image %}<img src="{{ s.image | relative_url }}" alt="{{ s.image_alt }}" loading="lazy">{% endif %}
-                <span class="card__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
-                <span class="card__title">{{ s.title }}</span>
-                <span class="card__text">{{ s.summary }}</span>
-            </a>
-        {% endfor %}
+<section class="section section--surface">
+    <div class="shell">
+        <p class="kicker">Serviços</p>
+        <h2 class="section__title section__title--narrow">{{ page.services_title }}</h2>
+        <div class="cards">
+            {% for s in site.data.services.services %}
+                <a class="card" href="{{ '/servicos/' | relative_url }}#{{ s.title | slugify }}">
+                    {% if s.image %}<img src="{{ s.image | relative_url }}" alt="{{ s.image_alt }}" loading="lazy">{% endif %}
+                    <span class="card__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+                    <span class="card__title">{{ s.title }}</span>
+                    <span class="card__text">{{ s.summary }}</span>
+                </a>
+            {% endfor %}
+        </div>
     </div>
 </section>
 

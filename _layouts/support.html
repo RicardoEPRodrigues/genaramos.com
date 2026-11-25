@@ -1,0 +1,83 @@
+---
+layout: default
+---
+{%- comment -%}
+    The "Apoio Capilar" page (partnership with Pampas Company). All copy is front matter in
+    apoio-capilar.md (CMS: Páginas › Apoio Capilar); Gena's phone and email come from _data/settings.yml.
+{%- endcomment -%}
+{%- assign s = site.data.settings -%}
+{%- assign pt = page.partner -%}
+<section class="shell about-hero support-hero">
+    <div class="about-hero__text">
+        {% include page-head.html %}
+        {% if page.lead %}<p class="about-hero__lead">{{ page.lead }}</p>{% endif %}
+        <div class="prose">{{ content }}</div>
+        <div class="actions">
+            <a class="btn btn--primary" href="tel:{{ s.phone_link }}">Marcar uma conversa{% include icon.html name="phone" %}</a>
+            <a class="btn btn--ghost" href="#onde">Onde estamos{% include icon.html name="map-pin" %}</a>
+        </div>
+    </div>
+    {% if page.image %}
+        <figure class="support-hero__figure">
+            <img class="about-hero__photo" src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">
+            {% if pt %}<figcaption class="support-hero__badge"><span class="kicker">{{ pt.name }}</span>{{ pt.address }}</figcaption>{% endif %}
+        </figure>
+    {% endif %}
+</section>
+
+{% if page.includes %}
+<section class="section section--surface">
+    <div class="shell two-col">
+        <div class="two-col__head">
+            {% if page.includes_kicker %}<p class="kicker">{{ page.includes_kicker }}</p>{% endif %}
+            <h2 class="section__title">{{ page.includes_title }}</h2>
+            {% if page.includes_text %}<p class="two-col__text">{{ page.includes_text }}</p>{% endif %}
+        </div>
+        <ul class="icon-rows">
+            {% for i in page.includes %}
+                <li><span class="contact-rows__icon">{% include icon.html name=i.icon %}</span><span class="icon-rows__text">{{ i.text }}</span></li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endif %}
+
+{% if page.quote %}
+<section class="shell section statement">
+    <p class="statement__quote">{{ page.quote }}</p>
+    {% if page.quote_text %}<p class="statement__text">{{ page.quote_text }}</p>{% endif %}
+</section>
+{% endif %}
+
+{% if page.health_title %}
+<section class="shell health">
+    <div class="health__card">
+        <span class="health__icon">{% include icon.html name="stethoscope" %}</span>
+        <div class="health__text">
+            <h2 class="health__title">{{ page.health_title }}</h2>
+            <p>{{ page.health_text }}</p>
+        </div>
+        <a class="btn btn--ghost" href="mailto:{{ s.email }}?subject={{ 'Parceria: apoio capilar' | uri_escape }}">Propor uma parceria{% include icon.html name="mail" %}</a>
+    </div>
+</section>
+{% endif %}
+
+{% if pt %}
+<section class="section section--surface" id="onde">
+    <div class="shell two-col">
+        <div class="two-col__head">
+            <p class="kicker">Onde estamos</p>
+            <h2 class="section__title">{{ page.where_title | default: pt.name }}</h2>
+            {% if page.where_text %}<p class="two-col__text">{{ page.where_text }}</p>{% endif %}
+        </div>
+        <ul class="contact-rows">
+            <li><span class="contact-rows__icon">{% include icon.html name="map-pin" %}</span><span><span class="stats__label">Morada</span>{% if pt.map_url %}<a href="{{ pt.map_url }}" target="_blank" rel="noopener">{{ pt.address }}</a>{% else %}<span>{{ pt.address }}</span>{% endif %}</span></li>
+            {% if pt.phone %}<li><span class="contact-rows__icon">{% include icon.html name="phone" %}</span><span><span class="stats__label">{{ pt.name }}</span><a href="tel:{{ pt.phone_link }}">{{ pt.phone }}</a></span></li>{% endif %}
+            <li><span class="contact-rows__icon">{% include icon.html name="phone" %}</span><span><span class="stats__label">{{ s.name }}</span><a href="tel:{{ s.phone_link }}">{{ s.phone }}</a></span></li>
+            <li><span class="contact-rows__icon">{% include icon.html name="mail" %}</span><span><span class="stats__label">Email</span><a href="mailto:{{ s.email }}">{{ s.email }}</a></span></li>
+        </ul>
+    </div>
+</section>
+{% endif %}
+
+{% include contact-band.html %}

@@ -460,10 +460,264 @@
         },
         {
           "type": "frame",
+          "id": "p8T0O",
+          "name": "Apoio Capilar",
+          "width": "fill_container",
+          "fill": "$surface",
+          "gap": 80,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "bL8Hm",
+              "name": "apoio-wig.jpg",
+              "width": 440,
+              "height": 520,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "images/apoio-wig.jpg",
+                "mode": "cover"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "E5yfWR",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kZ9f1",
+                  "name": "Tag",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ofvi0",
+                      "name": "Pill",
+                      "fill": "$accent-fill",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "D8tOL",
+                          "name": "NOVO",
+                          "fill": "$on-accent",
+                          "content": "NOVO",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "WcEGr",
+                      "name": "APOIO CAPILAR · EM PARCE",
+                      "fill": "$accent",
+                      "content": "APOIO CAPILAR · EM PARCERIA COM A PAMPAS COMPANY",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "b6RXIT",
+                  "name": "Apoio e soluções para qu",
+                  "fill": "$text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Apoio e soluções para quem enfrenta a queda de cabelo.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 54,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "c0pgw",
+                  "name": "Seja por tratamentos onc",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Seja por tratamentos oncológicos, alopecia ou outras situações, ofereço um acompanhamento especializado, com privacidade e sensibilidade, para recuperar a confiança e sentir-se bem consigo.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "B0QLt4",
+                  "name": "Points",
+                  "gap": 28,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TJ0D1",
+                      "name": "Alopecia e queda de cabelo",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "VLzrB",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "heart",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "o3pQKV",
+                          "name": "Alopecia e queda de cabe",
+                          "fill": "$text",
+                          "content": "Alopecia e queda de cabelo",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Neb8r",
+                      "name": "Cabeleiras e próteses capilares",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "hrBcq",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "user-round",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jiA6b",
+                          "name": "Cabeleiras e próteses ca",
+                          "fill": "$text",
+                          "content": "Cabeleiras e próteses capilares",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GyrIZ",
+                      "name": "Acompanhamento discreto",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "XG4ef",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "handshake",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sOXzJ",
+                          "name": "Acompanhamento discreto",
+                          "fill": "$text",
+                          "content": "Acompanhamento discreto",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AZ9Sb",
+                  "name": "Buttons",
+                  "gap": 16,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dBlx9",
+                      "name": "SABER MAIS",
+                      "fill": "$accent-fill",
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        30
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Z3Zrm",
+                          "name": "SABER MAIS",
+                          "fill": "$on-accent",
+                          "content": "SABER MAIS",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        },
+                        {
+                          "type": "icon",
+                          "id": "gpOWk",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$on-accent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
           "id": "SQ453",
           "name": "Portfolio",
           "width": "fill_container",
-          "fill": "$surface",
+          "fill": "$bg",
           "layout": "vertical",
           "gap": 56,
           "padding": [
@@ -1411,6 +1665,7 @@
           "id": "xfHNI",
           "name": "Services",
           "width": "fill_container",
+          "fill": "$surface",
           "layout": "vertical",
           "gap": 56,
           "padding": [
@@ -12337,6 +12592,17 @@
             },
             {
               "type": "text",
+              "id": "rdgiR",
+              "name": "APOIO CAPILAR",
+              "fill": "$text",
+              "content": "APOIO CAPILAR",
+              "fontFamily": "$font-caps",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "letterSpacing": 2.5
+            },
+            {
+              "type": "text",
               "id": "Kx3nj",
               "name": "PORTFÓLIO",
               "fill": "$text",
@@ -12488,6 +12754,17 @@
               "name": "SERVIÇOS",
               "fill": "$muted",
               "content": "SERVIÇOS",
+              "fontFamily": "$font-caps",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "letterSpacing": 2.5
+            },
+            {
+              "type": "text",
+              "id": "YK981",
+              "name": "APOIO CAPILAR",
+              "fill": "$muted",
+              "content": "APOIO CAPILAR",
               "fontFamily": "$font-caps",
               "fontSize": 14,
               "fontWeight": "600",
@@ -15086,6 +15363,260 @@
                       "icon": "arrow-right",
                       "library": "lucide",
                       "fill": "$accent"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e5GEk",
+          "name": "Apoio Capilar",
+          "width": "fill_container",
+          "fill": "$surface",
+          "gap": 80,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GWDT4",
+              "name": "apoio-wig.jpg",
+              "width": 360,
+              "height": 420,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "images/apoio-wig.jpg",
+                "mode": "cover"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "ERAeO",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vAsrn",
+                  "name": "Tag",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "glUpl",
+                      "name": "Pill",
+                      "fill": "$accent-fill",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R6hw4a",
+                          "name": "NOVO",
+                          "fill": "$on-accent",
+                          "content": "NOVO",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "J3y7G",
+                      "name": "APOIO CAPILAR · EM PARCE",
+                      "fill": "$accent",
+                      "content": "APOIO CAPILAR · EM PARCERIA COM A PAMPAS COMPANY",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "NXdjN",
+                  "name": "Apoio capilar para quem ",
+                  "fill": "$text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Apoio capilar para quem perdeu o cabelo.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 44,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rMHMW",
+                  "name": "Aconselhamento, escolha ",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Aconselhamento, escolha e adaptação de cabeleiras e próteses capilares, com acompanhamento individual e discreto, em Torres Vedras.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "pomoK",
+                  "name": "Points",
+                  "gap": 28,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "J8FWh",
+                      "name": "Alopecia e queda de cabelo",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "A3r4dX",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "heart",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UAlJH",
+                          "name": "Alopecia e queda de cabe",
+                          "fill": "$text",
+                          "content": "Alopecia e queda de cabelo",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "O0FTJ",
+                      "name": "Cabeleiras e próteses capilares",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "i6k1L3",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "user-round",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BNXfg",
+                          "name": "Cabeleiras e próteses ca",
+                          "fill": "$text",
+                          "content": "Cabeleiras e próteses capilares",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X2AvxG",
+                      "name": "Acompanhamento discreto",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "ZPC0g",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "handshake",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kSXgR",
+                          "name": "Acompanhamento discreto",
+                          "fill": "$text",
+                          "content": "Acompanhamento discreto",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l14IR",
+                  "name": "Buttons",
+                  "gap": 16,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NZkhr",
+                      "name": "SABER MAIS",
+                      "fill": "$accent-fill",
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        30
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZVwNE",
+                          "name": "SABER MAIS",
+                          "fill": "$on-accent",
+                          "content": "SABER MAIS",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        },
+                        {
+                          "type": "icon",
+                          "id": "AnuGT",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$on-accent"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -20221,6 +20752,1314 @@
       "ref": "b9LXzp",
       "name": "Contactos (claro)",
       "x": 14040,
+      "y": 0,
+      "theme": {
+        "mode": "light"
+      }
+    },
+    {
+      "type": "frame",
+      "id": "vSw2E",
+      "x": 15600,
+      "y": 0,
+      "name": "Apoio Capilar",
+      "theme": {
+        "mode": "dark"
+      },
+      "reusable": true,
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "JGdkX",
+          "type": "ref",
+          "ref": "Plmdl",
+          "name": "Site Nav",
+          "width": "fill_container",
+          "fill": "#00000000",
+          "descendants": {
+            "rdgiR": {
+              "fill": "$accent"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "Q4ABfk",
+          "name": "Hero",
+          "width": "fill_container",
+          "gap": 96,
+          "padding": [
+            56,
+            80,
+            120,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "YrVoO",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kgFAD",
+                  "name": "EM PARCERIA COM A PAMPAS",
+                  "fill": "$accent",
+                  "content": "EM PARCERIA COM A PAMPAS COMPANY",
+                  "fontFamily": "$font-caps",
+                  "fontSize": 15,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "GmOb7",
+                  "name": "Headline",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K3uSdK",
+                      "name": "Apoio e soluções\npara o ",
+                      "fill": "$text",
+                      "content": "Apoio e soluções\npara o seu",
+                      "lineHeight": 1.02,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 80,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gdxJ5",
+                      "name": "bem-estar.",
+                      "fill": "$accent",
+                      "content": "bem-estar.",
+                      "lineHeight": 1.02,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 80,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "y4xNU",
+                  "name": "Em parceria com a Pampas",
+                  "fill": "$text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Em parceria com a Pampas Company, ofereço um espaço de apoio, cuidado e soluções capilares personalizadas, com privacidade, sensibilidade e profissionalismo.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "BL1dS",
+                  "name": "A queda de cabelo pode s",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "A queda de cabelo pode ser uma realidade difícil em qualquer fase da vida, seja por tratamentos oncológicos, alopecia ou outras situações. Aqui encontra um acompanhamento especializado, para recuperar a sua confiança e sentir-se bem consigo mesma.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "SOM3v",
+                  "name": "Buttons",
+                  "gap": 16,
+                  "padding": [
+                    12,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aDuVs",
+                      "name": "MARCAR UMA CONVERSA",
+                      "fill": "$accent-fill",
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        30
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vulYz",
+                          "name": "MARCAR UMA CONVERSA",
+                          "fill": "$on-accent",
+                          "content": "MARCAR UMA CONVERSA",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        },
+                        {
+                          "type": "icon",
+                          "id": "DL8xr",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "phone",
+                          "library": "lucide",
+                          "fill": "$on-accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TPbcm",
+                      "name": "ONDE ESTAMOS",
+                      "stroke": "$rule-strong",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        30
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IzuoS",
+                          "name": "ONDE ESTAMOS",
+                          "fill": "$text",
+                          "content": "ONDE ESTAMOS",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        },
+                        {
+                          "type": "icon",
+                          "id": "DVbGb",
+                          "name": "Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bHv7C",
+              "name": "Photo",
+              "width": 520,
+              "height": 660,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zLveA",
+                  "x": 0,
+                  "y": 0,
+                  "name": "apoio-wig.jpg",
+                  "width": 520,
+                  "height": 660,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "images/apoio-wig.jpg",
+                    "mode": "cover"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "YrHd2",
+                  "x": -56,
+                  "y": 520,
+                  "name": "Partner Badge",
+                  "width": 300,
+                  "fill": "$surface",
+                  "stroke": "$rule",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zOYVr",
+                      "name": "PAMPAS COMPANY",
+                      "fill": "$accent",
+                      "content": "PAMPAS COMPANY",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "ur4Gu",
+                      "name": "Mercado Municipal de Tor",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Mercado Municipal de Torres Vedras · Piso 1",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Cskyk",
+          "name": "Includes",
+          "width": "fill_container",
+          "fill": "$surface",
+          "gap": 96,
+          "padding": [
+            120,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "T81VW",
+              "name": "Head",
+              "width": 420,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Au7p1",
+                  "name": "OS SERVIÇOS INCLUEM",
+                  "fill": "$accent",
+                  "content": "OS SERVIÇOS INCLUEM",
+                  "fontFamily": "$font-caps",
+                  "fontSize": 15,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "OMORQ",
+                  "name": "Um acompanhamento pensad",
+                  "fill": "$text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Um acompanhamento pensado para si.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 54,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "b11Di",
+                  "name": "Cada pessoa chega com um",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Cada pessoa chega com uma história diferente. O primeiro passo é uma conversa, sem pressa e com toda a discrição.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Qe7Ja",
+              "name": "List",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SitQe",
+                  "name": "Aconselhamento e escolha",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 28,
+                  "padding": [
+                    26,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qp7VV",
+                      "name": "Icon Wrap",
+                      "width": 56,
+                      "height": 56,
+                      "cornerRadius": 28,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "A06AM",
+                          "name": "Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "user-round",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "o7NMnW",
+                      "name": "Text",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Aconselhamento e escolha de cabeleiras e próteses capilares",
+                      "lineHeight": 1.25,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 26,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UIFsG",
+                  "name": "Soluções personalizadas ",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 28,
+                  "padding": [
+                    26,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lVhZs",
+                      "name": "Icon Wrap",
+                      "width": 56,
+                      "height": 56,
+                      "cornerRadius": 28,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "mKdpv",
+                          "name": "Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "heart",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "XCHIp",
+                      "name": "Text",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Soluções personalizadas para situações de alopecia e queda de cabelo",
+                      "lineHeight": 1.25,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 26,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "f7UYHT",
+                  "name": "Colocação, adaptação e p",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 28,
+                  "padding": [
+                    26,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VXF0c",
+                      "name": "Icon Wrap",
+                      "width": 56,
+                      "height": 56,
+                      "cornerRadius": 28,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "e2X7I",
+                          "name": "Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "sparkles",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "fsZiP",
+                      "name": "Text",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Colocação, adaptação e personalização",
+                      "lineHeight": 1.25,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 26,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "P06qS",
+                  "name": "Corte, penteado e manute",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 28,
+                  "padding": [
+                    26,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "g0TJg",
+                      "name": "Icon Wrap",
+                      "width": 56,
+                      "height": 56,
+                      "cornerRadius": 28,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "m7enug",
+                          "name": "Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "scissors",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "nwVob",
+                      "name": "Text",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Corte, penteado e manutenção",
+                      "lineHeight": 1.25,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 26,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Adojc",
+                  "name": "Acompanhamento individua",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 28,
+                  "padding": [
+                    26,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qiDbw",
+                      "name": "Icon Wrap",
+                      "width": 56,
+                      "height": 56,
+                      "cornerRadius": 28,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "RAQhz",
+                          "name": "Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "handshake",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "vfriq",
+                      "name": "Text",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Acompanhamento individual e discreto",
+                      "lineHeight": 1.25,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 26,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T5zqKN",
+          "name": "Quote",
+          "width": "fill_container",
+          "gap": 96,
+          "padding": [
+            120,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Ig0RW",
+              "name": "Experiência, sensibilida",
+              "fill": "$accent",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "Experiência, sensibilidade e dedicação.",
+              "lineHeight": 1.1,
+              "fontFamily": "Playfair Display",
+              "fontSize": 64,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "T80MY",
+              "name": "Com mais de 30 anos de e",
+              "fill": "$text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Com mais de 30 anos de experiência na área dos cabelos, em cinema, teatro e televisão, coloco o meu conhecimento ao serviço de quem procura recuperar a confiança e sentir-se bem consigo.",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-body",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I9WVs",
+          "name": "Health Partners",
+          "width": "fill_container",
+          "padding": [
+            0,
+            80,
+            120,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "t3GTsr",
+              "name": "Card",
+              "width": "fill_container",
+              "stroke": "$accent",
+              "strokeWidth": 1,
+              "gap": 48,
+              "padding": [
+                56,
+                64
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "f2Ruuh",
+                  "name": "Icon Wrap",
+                  "width": 80,
+                  "height": 80,
+                  "fill": "$accent-fill",
+                  "cornerRadius": 40,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "zguf4",
+                      "name": "Icon",
+                      "width": 34,
+                      "height": 34,
+                      "icon": "stethoscope",
+                      "library": "lucide",
+                      "fill": "$on-accent"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H6Lz7",
+                  "name": "Text",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aSuPl",
+                      "name": "Para clínicas, hospitais",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Para clínicas, hospitais e profissionais de saúde",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 34,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wauSz",
+                      "name": "Estamos disponíveis para",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Estamos disponíveis para colaborar com clínicas, hospitais e profissionais de saúde, garantindo um apoio digno, discreto e humano.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QpR3o",
+                  "name": "PROPOR UMA PARCERIA",
+                  "stroke": "$rule-strong",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    30
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U3xlOD",
+                      "name": "PROPOR UMA PARCERIA",
+                      "fill": "$text",
+                      "content": "PROPOR UMA PARCERIA",
+                      "fontFamily": "$font-caps",
+                      "fontSize": 15,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    },
+                    {
+                      "type": "icon",
+                      "id": "jACrk",
+                      "name": "Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "mail",
+                      "library": "lucide",
+                      "fill": "$text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bVjsx",
+          "name": "Where",
+          "width": "fill_container",
+          "fill": "$surface",
+          "gap": 96,
+          "padding": [
+            120,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "tcnZm",
+              "name": "Head",
+              "width": 420,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OgEIr",
+                  "name": "ONDE ESTAMOS",
+                  "fill": "$accent",
+                  "content": "ONDE ESTAMOS",
+                  "fontFamily": "$font-caps",
+                  "fontSize": 15,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "dBPnJ",
+                  "name": "Pampas Company, Torres V",
+                  "fill": "$text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pampas Company, Torres Vedras.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 54,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "fRMzc",
+                  "name": "Um espaço reservado, com",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Um espaço reservado, com privacidade. Marque antes a sua visita.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Iez9a",
+              "name": "Details",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "L4KGp",
+                  "name": "MORADA",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 24,
+                  "padding": [
+                    22,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "bybhP",
+                      "name": "Icon Wrap",
+                      "width": 52,
+                      "height": 52,
+                      "cornerRadius": 26,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "LrNZt",
+                          "name": "Icon",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "d3eVUg",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AHa4Y",
+                          "name": "MORADA",
+                          "fill": "$subtle",
+                          "content": "MORADA",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "DphSR",
+                          "name": "Value",
+                          "fill": "$text",
+                          "content": "Mercado Municipal de Torres Vedras · Piso 1",
+                          "lineHeight": 1.1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AkFxo",
+                  "name": "PAMPAS COMPANY",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 24,
+                  "padding": [
+                    22,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "X0rdK",
+                      "name": "Icon Wrap",
+                      "width": 52,
+                      "height": 52,
+                      "cornerRadius": 26,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "yeORr",
+                          "name": "Icon",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "phone",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "La449",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Cs5j9",
+                          "name": "PAMPAS COMPANY",
+                          "fill": "$subtle",
+                          "content": "PAMPAS COMPANY",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "i1X7N3",
+                          "name": "Value",
+                          "fill": "$text",
+                          "content": "918 730 343",
+                          "lineHeight": 1.1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kXYHN",
+                  "name": "GENA RAMOS",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 24,
+                  "padding": [
+                    22,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "V4xjUi",
+                      "name": "Icon Wrap",
+                      "width": 52,
+                      "height": 52,
+                      "cornerRadius": 26,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "vS3Jb",
+                          "name": "Icon",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "phone",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eSiwV",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "M6IfQ9",
+                          "name": "GENA RAMOS",
+                          "fill": "$subtle",
+                          "content": "GENA RAMOS",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "KhlN2",
+                          "name": "Value",
+                          "fill": "$text",
+                          "content": "966 008 332",
+                          "lineHeight": 1.1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n7T1R",
+                  "name": "EMAIL",
+                  "width": "fill_container",
+                  "stroke": "$rule",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 24,
+                  "padding": [
+                    22,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gRFlA",
+                      "name": "Icon Wrap",
+                      "width": 52,
+                      "height": 52,
+                      "cornerRadius": 26,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "L6Ag2",
+                          "name": "Icon",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "mail",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T1DEb0",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l6N2k",
+                          "name": "EMAIL",
+                          "fill": "$subtle",
+                          "content": "EMAIL",
+                          "fontFamily": "$font-caps",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "oMpbD",
+                          "name": "Value",
+                          "fill": "$text",
+                          "content": "gena@genaramos.com",
+                          "lineHeight": 1.1,
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qwMKx",
+          "name": "Contact Band",
+          "width": "fill_container",
+          "fill": "$accent-fill",
+          "padding": [
+            96,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Kk5j4",
+              "name": "Text",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OVQlJ",
+                  "name": "Vamos conversar?",
+                  "fill": "$on-accent",
+                  "content": "Vamos conversar?",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 72,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "Q5ZSn",
+                  "name": "Porque sentir-se bem con",
+                  "fill": "$on-accent",
+                  "content": "Porque sentir-se bem consigo mesma faz toda a diferença.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c70aKN",
+              "name": "Details",
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jeprw",
+                  "name": "+351 966 008 332",
+                  "width": 420,
+                  "stroke": "$on-accent",
+                  "strokeWidth": {
+                    "bottom": 1.5
+                  },
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    0,
+                    14,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "Zj7UO",
+                      "name": "Icon",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "phone",
+                      "library": "lucide",
+                      "fill": "$on-accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CKIjK",
+                      "name": "Value",
+                      "fill": "$on-accent",
+                      "content": "+351 966 008 332",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CV9bl",
+                  "name": "gena@genaramos.com",
+                  "width": 420,
+                  "stroke": "$on-accent",
+                  "strokeWidth": {
+                    "bottom": 1.5
+                  },
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    0,
+                    14,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "T9GTDs",
+                      "name": "Icon",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "mail",
+                      "library": "lucide",
+                      "fill": "$on-accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pOqjT",
+                      "name": "Value",
+                      "fill": "$on-accent",
+                      "content": "gena@genaramos.com",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Xwgho",
+          "type": "ref",
+          "ref": "ivgG1",
+          "name": "Site Footer",
+          "width": "fill_container",
+          "fill": "#00000000"
+        }
+      ]
+    },
+    {
+      "id": "PpxKt",
+      "type": "ref",
+      "ref": "vSw2E",
+      "name": "Apoio Capilar (claro)",
+      "x": 17160,
       "y": 0,
       "theme": {
         "mode": "light"

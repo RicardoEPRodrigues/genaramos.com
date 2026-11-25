@@ -1,0 +1,23 @@
+{%- comment -%}
+    The "Apoio Capilar" highlight used on the home and services pages. Its words come from the
+    teaser in apoio-capilar.md; pass title= and text= to override them.
+{%- endcomment -%}
+{%- assign sp = site.pages | where: "url", "/apoio-capilar/" | first -%}
+{%- if sp -%}
+<section class="support-teaser{% if include.compact %} support-teaser--compact{% endif %}">
+    <div class="shell support-teaser__row">
+        {% if sp.image %}<img class="support-teaser__photo" src="{{ sp.image | relative_url }}" alt="{{ sp.image_alt }}" loading="lazy">{% endif %}
+        <div class="support-teaser__text">
+            <p class="support-teaser__tag"><span class="pill">Novo</span><span>{{ sp.title }} · {{ sp.kicker }}</span></p>
+            <h2 class="section__title">{{ include.title | default: sp.teaser.title }}</h2>
+            <p class="support-teaser__lead">{{ include.text | default: sp.teaser.text }}</p>
+            {% if sp.teaser.points %}
+                <ul class="support-teaser__points">
+                    {% for p in sp.teaser.points %}<li>{% include icon.html name=p.icon %}{{ p.text }}</li>{% endfor %}
+                </ul>
+            {% endif %}
+            <a class="btn btn--primary" href="{{ sp.url | relative_url }}">Saber mais{% include icon.html name="arrow-right" %}</a>
+        </div>
+    </div>
+</section>
+{%- endif -%}
